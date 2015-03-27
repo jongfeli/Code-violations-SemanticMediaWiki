@@ -1,0 +1,44 @@
+
+vendor/bin/phpcs includes/* --standard=phpcs.xml --extensions=php -s --report=source
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+--------------------------------------------------------------------------------
+    SOURCE                                                                 COUNT
+--------------------------------------------------------------------------------
+[x] Squiz.WhiteSpace.SuperfluousWhitespace.EndLine                         197
+[ ] PSR1.Classes.ClassDeclaration.MissingNamespace                         98
+[x] Generic.ControlStructures.InlineControlStructure.NotAllowed            63
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                               58
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found                     46
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded                       41
+[x] Squiz.Classes.SelfMemberReference.NotUsed                              31
+[ ] PSR1.Classes.ClassDeclaration.MultipleClasses                          28
+[ ] Generic.Files.LineLength.MaxExceeded                                   28
+[ ] Squiz.Scope.MethodScope.Missing                                        24
+[ ] Generic.Files.OneClassPerFile.MultipleFound                            23
+[x] Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed                      16
+[ ] Squiz.Functions.GlobalFunction.Found                                   11
+[x] Generic.Files.EndFileNewline.NotFound                                  9
+[x] Squiz.WhiteSpace.SemicolonSpacing.Incorrect                            7
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                      6
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF                         6
+[x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket4
+[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed                    4
+[x] Generic.PHP.LowerCaseConstant.Found                                    4
+[ ] PSR1.Files.SideEffects.FoundWithSymbols                                4
+[x] Generic.Formatting.DisallowMultipleStatements.SameLine                 3
+[ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps           3
+[x] Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle              2
+[x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations                    2
+[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect                    2
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSE                       2
+[x] Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceAfter              1
+[x] PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter                    1
+[ ] Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
+[ ] Generic.CodeAnalysis.UselessOverridingMethod.Found                     1
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF                     1
+--------------------------------------------------------------------------------
+A TOTAL OF 727 SNIFF VIOLATIONS WERE FOUND IN 32 SOURCES
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 15 MARKED SOURCES AUTOMATICALLY (346 VIOLATIONS IN TOTAL)
+--------------------------------------------------------------------------------
