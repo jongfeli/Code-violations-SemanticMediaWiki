@@ -1,0 +1,25 @@
+
+vendor/bin/phpcs languages/* --standard=phpcs.xml --extensions=php -s --report=source
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+----------------------------------------------------------------------
+    SOURCE                                                       COUNT
+----------------------------------------------------------------------
+[ ] PSR1.Classes.ClassDeclaration.MissingNamespace               21
+[ ] PSR1.Files.SideEffects.FoundWithSymbols                      21
+[x] Generic.ControlStructures.InlineControlStructure.NotAllowed  20
+[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          20
+[x] Squiz.WhiteSpace.SuperfluousWhitespace.EndLine               15
+[ ] Squiz.Scope.MethodScope.Missing                              10
+[ ] Generic.Files.LineLength.MaxExceeded                         7
+[x] Squiz.Classes.SelfMemberReference.NotUsed                    5
+[ ] Squiz.Classes.ValidClassName.NotCamelCaps                    3
+[x] Generic.Files.EndFileNewline.NotFound                        2
+[x] Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore             1
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           1
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     1
+----------------------------------------------------------------------
+A TOTAL OF 127 SNIFF VIOLATIONS WERE FOUND IN 13 SOURCES
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SOURCES AUTOMATICALLY (63 VIOLATIONS IN TOTAL)
+----------------------------------------------------------------------
