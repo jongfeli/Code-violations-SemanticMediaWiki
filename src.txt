@@ -1,0 +1,249 @@
+
+vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -s --report=source
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+----------------------------------------------------------------------
+    SOURCE                                                       COUNT
+----------------------------------------------------------------------
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           11
+[ ] Squiz.Scope.MethodScope.Missing                              5
+[ ] Generic.Files.LineLength.MaxExceeded                         4
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     3
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             2
+[x] Squiz.WhiteSpace.ScopeClosingBrace.Indent                    1
+[x] Squiz.Classes.SelfMemberReference.NotUsed                    1
+[ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
+[ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
+----------------------------------------------------------------------
+A TOTAL OF 33 SNIFF VIOLATIONS WERE FOUND IN 11 SOURCES
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (2 VIOLATIONS IN TOTAL)
+----------------------------------------------------------------------
+
+############################################################################
+
+vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -sp
+
+.....EW.....W............E.....................E.....E...E..  60 / 188 (32%)
+.....................................W.........E.....E...... 120 / 188 (64%)
+..W.....................EE...E.W...WE.E......E....E.W....... 180 / 188 (96%)
+........
+
+
+FILE: ...extensions/SemanticMediaWiki/src/Annotator/PredefinedPropertyAnnotator.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 93 | ERROR | Line exceeds maximum limit of 180 characters; contains 187
+    |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 96 | ERROR | Line exceeds maximum limit of 180 characters; contains 185
+    |       | characters (Generic.Files.LineLength.MaxExceeded)
+--------------------------------------------------------------------------------
+
+
+FILE: ...tensions/SemanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 28 | WARNING | Possible useless method overriding detected
+    |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...awiki-1.24.1/extensions/SemanticMediaWiki/src/Cache/FixedInMemoryCache.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 81 | WARNING | The method parameter $ttl is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...ediawiki-1.24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 53 | ERROR | [x] Closing brace indented incorrectly; expected 3 spaces, found
+    |       |     2 (Squiz.WhiteSpace.ScopeClosingBrace.Indent)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...awiki-1.24.1/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 46 | ERROR | Visibility must be declared on method "__construct"
+    |       | (Squiz.Scope.MethodScope.Missing)
+--------------------------------------------------------------------------------
+
+
+FILE: ...extensions/SemanticMediaWiki/src/MediaWiki/Api/ApiQueryResultFormatter.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 118 | ERROR | Function's nesting level (5) exceeds allowed maximum of 3
+     |       | (Generic.Metrics.NestingLevel.MaxExceeded)
+--------------------------------------------------------------------------------
+
+
+FILE: ...l/mediawiki-1.24.1/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
+--------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+--------------------------------------------------------------------------------
+ 273 | ERROR | Visibility must be declared on method "affectedRows"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 310 | ERROR | Visibility must be declared on method "insertId"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 328 | ERROR | Visibility must be declared on method "update"
+     |       | (Squiz.Scope.MethodScope.Missing)
+--------------------------------------------------------------------------------
+
+
+FILE: ...ticMediaWiki/src/MediaWiki/Specials/SearchByProperty/QueryResultLookup.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 84 | WARNING | The method parameter $count is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...html/mediawiki-1.24.1/extensions/SemanticMediaWiki/src/NumberFormatter.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 82 | ERROR | Function's nesting level (4) exceeds allowed maximum of 3
+    |       | (Generic.Metrics.NestingLevel.MaxExceeded)
+--------------------------------------------------------------------------------
+
+
+FILE: ...l/mediawiki-1.24.1/extensions/SemanticMediaWiki/src/Query/PrintRequest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 207 | ERROR | Function's nesting level (4) exceeds allowed maximum of 3
+     |       | (Generic.Metrics.NestingLevel.MaxExceeded)
+ 207 | ERROR | Function's cyclomatic complexity (15) exceeds allowed maximum of
+     |       | 10 (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+--------------------------------------------------------------------------------
+
+
+FILE: ....24.1/extensions/SemanticMediaWiki/src/Query/Language/ClassDescription.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 102 | WARNING | The method parameter $maxdepth is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...c/SPARQLStore/QueryEngine/ConditionBuilder/ConjunctionConditionBuilder.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 162 | ERROR | Empty ELSEIF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+--------------------------------------------------------------------------------
+
+
+FILE: ...iki/src/SPARQLStore/QueryEngine/ConditionBuilder/ValueConditionBuilder.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
+--------------------------------------------------------------------------------
+  80 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed maximum of
+     |         | 10 (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 161 | ERROR   | Line exceeds maximum limit of 180 characters; contains 181
+     |         | characters (Generic.Files.LineLength.MaxExceeded)
+ 181 | WARNING | The method parameter $orderByProperty is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...c/SPARQLStore/QueryEngine/ConditionBuilder/DisjunctionConditionBuilder.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 163 | ERROR | Empty IF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
+--------------------------------------------------------------------------------
+
+
+FILE: ...iki/src/SPARQLStore/QueryEngine/ConditionBuilder/ThingConditionBuilder.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 71 | WARNING | The method parameter $description is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...tensions/SemanticMediaWiki/src/SPARQLStore/QueryEngine/RawResultParser.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 6 WARNINGS AFFECTING 5 LINES
+--------------------------------------------------------------------------------
+ 146 | WARNING | The method parameter $parser is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 156 | WARNING | The method parameter $parser is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 173 | WARNING | Avoid function calls in a FOR loop test part
+     |         | (Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed)
+ 196 | WARNING | The method parameter $parser is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 196 | WARNING | The method parameter $elementTag is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 203 | WARNING | The method parameter $parser is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...1/extensions/SemanticMediaWiki/src/SPARQLStore/QueryEngine/QueryEngine.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+  65 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 278 | ERROR | Empty ELSEIF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+--------------------------------------------------------------------------------
+
+
+FILE: ...icMediaWiki/src/SPARQLStore/Exception/BadHttpDatabaseResponseException.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 52 | ERROR | Visibility must be declared on method "__construct"
+    |       | (Squiz.Scope.MethodScope.Missing)
+--------------------------------------------------------------------------------
+
+
+FILE: ...4.1/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/SqlQueryPart.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 67 | ERROR | [x] Must use "self::" for local static member reference
+    |       |     (Squiz.Classes.SelfMemberReference.NotUsed)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...manticMediaWiki/src/SQLStore/QueryEngine/Compiler/SomePropertyCompiler.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 211 | ERROR | Empty ELSEIF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+--------------------------------------------------------------------------------
+
+
+FILE: ...icMediaWiki/src/SQLStore/QueryEngine/Compiler/ThingDescriptionCompiler.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 49 | WARNING | The method parameter $description is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
