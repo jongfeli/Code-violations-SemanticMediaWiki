@@ -1,0 +1,14 @@
+
+vendor/bin/phpcs resources/* --standard=phpcs.xml --extensions=php -s --report=source
+
+PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
+-------------------------------------------------------------------------
+    SOURCE                                                          COUNT
+-------------------------------------------------------------------------
+[x] Squiz.WhiteSpace.SuperfluousWhitespace.EndLine                  2
+[x] Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma  1
+-------------------------------------------------------------------------
+A TOTAL OF 3 SNIFF VIOLATIONS WERE FOUND IN 2 SOURCES
+-------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (3 VIOLATIONS IN TOTAL)
+-------------------------------------------------------------------------
