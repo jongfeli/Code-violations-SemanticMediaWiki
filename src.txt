@@ -1,5 +1,5 @@
 
-vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -s --report=source
+vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -s --report=source
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
@@ -24,7 +24,7 @@ PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (2 VIOLATIONS IN TOTAL)
 
 ############################################################################
 
-vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -sp
+vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
 .....EW.....W............E.....................E.....E...E..  60 / 188 (32%)
 .....................................W.........E.....E...... 120 / 188 (64%)
