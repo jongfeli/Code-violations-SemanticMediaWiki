@@ -2,54 +2,44 @@
 vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
-----------------------------------------------------------------------
-SOURCE                                                           COUNT
-----------------------------------------------------------------------
-Generic.CodeAnalysis.UnusedFunctionParameter.Found               20
-Generic.Files.LineLength.MaxExceeded                             6
-PSR1.Classes.ClassDeclaration.MultipleClasses                    3
-Generic.Files.OneClassPerFile.MultipleFound                      3
-Generic.Metrics.NestingLevel.MaxExceeded                         3
-PSR1.Files.SideEffects.FoundWithSymbols                          3
-Generic.PHP.SAPIUsage.FunctionFound                              2
-Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
-Generic.CodeAnalysis.UselessOverridingMethod.Found               1
-Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                1
-Generic.Metrics.CyclomaticComplexity.MaxExceeded                 1
-Squiz.Scope.MethodScope.Missing                                  1
-Internal.NoCodeFound                                             1
-----------------------------------------------------------------------
-A TOTAL OF 46 SNIFF VIOLATIONS WERE FOUND IN 13 SOURCES
-----------------------------------------------------------------------
+--------------------------------------------------------------------------
+    SOURCE                                                           COUNT
+--------------------------------------------------------------------------
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found               7
+[ ] Generic.Files.LineLength.MaxExceeded                             5
+[ ] PSR1.Classes.ClassDeclaration.MultipleClasses                    3
+[ ] Generic.Files.OneClassPerFile.MultipleFound                      3
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                         3
+[ ] PSR1.Files.SideEffects.FoundWithSymbols                          3
+[x] Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma  1
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                1
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded                 1
+[ ] Internal.NoCodeFound                                             1
+--------------------------------------------------------------------------
+A TOTAL OF 29 SNIFF VIOLATIONS WERE FOUND IN 11 SOURCES
+--------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
+--------------------------------------------------------------------------
 
 ############################################################################
 
 vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -sp
 
-EE.....W......E......................................E.....W  60 / 419 (14%)
-..W..........................W..W.........W......W.......... 120 / 419 (29%)
-................E...........E....E.................EW..E..W. 180 / 419 (43%)
-...W....................E......W......W.W.............W..... 240 / 419 (57%)
-.............................E.............W................ 300 / 419 (72%)
-...........E........W............W.......................... 360 / 419 (86%)
-.......................................E..........W......EW
-
-
-FILE: ...ww/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/tests/autoloader.php
---------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 12 | ERROR | Use the PHP_SAPI constant instead of calling php_sapi_name()
-    |       | (Generic.PHP.SAPIUsage.FunctionFound)
---------------------------------------------------------------------------------
+.E.....W.............................................E.....W  60 / 422 (14%)
+..W......................................................... 120 / 422 (28%)
+..............E...........E....E.................EW..E..W... 180 / 422 (43%)
+......................E......W.............................. 240 / 422 (57%)
+...........................E.............W.................. 300 / 422 (71%)
+............W.E.E...................W....................... 360 / 422 (85%)
+............................................................ 420 / 422 (100%)
+EW
 
 
 FILE: ...www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/tests/bootstrap.php
 --------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 --------------------------------------------------------------------------------
- 3 | ERROR | Use the PHP_SAPI constant instead of calling php_sapi_name()
-   |       | (Generic.PHP.SAPIUsage.FunctionFound)
  9 | ERROR | Line exceeds maximum limit of 180 characters; contains 228
    |       | characters (Generic.Files.LineLength.MaxExceeded)
 --------------------------------------------------------------------------------
@@ -64,22 +54,13 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 --------------------------------------------------------------------------------
 
 
-FILE: .../extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php
---------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 99 | ERROR | Visibility must be declared on method "initializeFromRequest"
-    |       | (Squiz.Scope.MethodScope.Missing)
---------------------------------------------------------------------------------
-
-
 FILE: .../SemanticMediaWiki/tests/phpunit/Utils/Validators/QueryResultValidator.php
 --------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 --------------------------------------------------------------------------------
- 51 | ERROR | Function's nesting level (5) exceeds allowed maximum of 3
+ 52 | ERROR | Function's nesting level (5) exceeds allowed maximum of 3
     |       | (Generic.Metrics.NestingLevel.MaxExceeded)
- 94 | ERROR | Function's nesting level (5) exceeds allowed maximum of 3
+ 96 | ERROR | Function's nesting level (5) exceeds allowed maximum of 3
     |       | (Generic.Metrics.NestingLevel.MaxExceeded)
 --------------------------------------------------------------------------------
 
@@ -103,48 +84,8 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
  1 | WARNING | A file should declare new symbols (classes, functions, constants,
    |         | etc.) and cause no other side effects, or it should execute logic with
    |         | side effects, but should not do both. The first symbol is defined on
-   |         | line 22 and the first side effect is on line 105.
+   |         | line 21 and the first side effect is on line 105.
    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
---------------------------------------------------------------------------------
-
-
-FILE: ...SemanticMediaWiki/tests/phpunit/includes/Maintenance/DataRebuilderTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 321 | WARNING | The method parameter $count is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 321 | WARNING | The method parameter $namespaces is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 321 | WARNING | The method parameter $usejobs is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...diaWiki/tests/phpunit/includes/Annotator/RedirectPropertyAnnotatorTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 34 | WARNING | Possible useless method overriding detected
-    |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...nticMediaWiki/tests/phpunit/includes/parserhooks/SetParserFunctionTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 67 | WARNING | The method parameter $expected is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...nticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 75 | WARNING | The method parameter $expected is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 --------------------------------------------------------------------------------
 
 
@@ -221,15 +162,6 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 --------------------------------------------------------------------------------
 
 
-FILE: ...24.1/extensions/SemanticMediaWiki/tests/phpunit/includes/SubobjectTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 209 | WARNING | The method parameter $expected is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
 FILE: ...manticMediaWiki/tests/phpunit/includes/dic/SimpleDependencyBuilderTest.php
 --------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
@@ -247,37 +179,6 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 --------------------------------------------------------------------------------
  108 | WARNING | The method parameter $params is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...ediaWiki/tests/phpunit/includes/MediaWiki/Jobs/UpdateDispatcherJobTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 299 | WARNING | The method parameter $requestoptions is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Jobs/RefreshJobTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 177 | WARNING | The method parameter $count is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 177 | WARNING | The method parameter $namespaces is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
---------------------------------------------------------------------------------
-
-
-FILE: ...ticMediaWiki/tests/phpunit/includes/MediaWiki/RedirectTargetFinderTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 53 | WARNING | The method parameter $expectedHasTarget is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 53 | WARNING | The method parameter $expectedGetTarget is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 --------------------------------------------------------------------------------
 
 
@@ -299,21 +200,32 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 --------------------------------------------------------------------------------
 
 
+FILE: ...anticMediaWiki/tests/phpunit/includes/Exporter/Element/ExpResourceTest.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 65 | WARNING | The method parameter $isBlankNode is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+--------------------------------------------------------------------------------
+
+
+FILE: ...manticMediaWiki/tests/phpunit/includes/Exporter/Element/ExpElementTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 90 | ERROR | [x] No space found after comma in function call
+    |       |     (Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
 FILE: ...i-1.24.1/extensions/SemanticMediaWiki/tests/phpunit/includes/SetupTest.php
 --------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 --------------------------------------------------------------------------------
  156 | ERROR | Function's cyclomatic complexity (26) exceeds allowed maximum of
      |       | 10 (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
---------------------------------------------------------------------------------
-
-
-FILE: .../extensions/SemanticMediaWiki/tests/phpunit/includes/storage/StoreTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 150 | WARNING | The method parameter $query is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 --------------------------------------------------------------------------------
 
 
@@ -324,28 +236,8 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
  1 | WARNING | A file should declare new symbols (classes, functions, constants,
    |         | etc.) and cause no other side effects, or it should execute logic with
    |         | side effects, but should not do both. The first symbol is defined on
-   |         | line 24 and the first side effect is on line 103.
+   |         | line 16 and the first side effect is on line 94.
    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
---------------------------------------------------------------------------------
-
-
-FILE: ...cMediaWiki/tests/phpunit/Integration/MediaWiki/Import/TimeDataTypeTest.php
---------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 39 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
-    |       | characters (Generic.Files.LineLength.MaxExceeded)
---------------------------------------------------------------------------------
-
-
-FILE: ...iaWiki/tests/phpunit/Integration/Parser/ByJsonParserTestCaseRunnerTest.php
---------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
---------------------------------------------------------------------------------
-  92 | WARNING | The method parameter $debug is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 118 | WARNING | The method parameter $debug is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 --------------------------------------------------------------------------------
 
 
@@ -367,4 +259,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | but PHP does not allow them. (Internal.NoCodeFound)
 --------------------------------------------------------------------------------
 
-Time: 16.92 secs; Memory: 44Mb
+Time: 16.87 secs; Memory: 49.75Mb
