@@ -7,43 +7,30 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           11
 [ ] Squiz.Scope.MethodScope.Missing                              5
-[ ] Generic.Files.LineLength.MaxExceeded                         4
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
 [ ] Generic.Metrics.NestingLevel.MaxExceeded                     3
 [ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             2
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    1
-[x] Squiz.WhiteSpace.ScopeClosingBrace.Indent                    1
-[x] Generic.Files.EndFileNewline.NotFound                        1
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
+[ ] Generic.Classes.DuplicateClassName.Found                     1
 ----------------------------------------------------------------------
-A TOTAL OF 34 SNIFF VIOLATIONS WERE FOUND IN 12 SOURCES
+A TOTAL OF 29 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (3 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 6.1 secs; Memory: 37.5Mb
+Time: 6.16 secs; Memory: 37.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-.....EW.....W............E...........................E.....E  60 / 200 (30%)
-...E.......................................W.........E.....E 120 / 200 (60%)
-........W.....................EE...E.W...WE.E......E...W..E. 180 / 200 (90%)
-.E..................
-
-
-FILE: .../SemanticMediaWiki/src/Annotator/PredefinedPropertyAnnotator.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
-----------------------------------------------------------------------
- 93 | ERROR | Line exceeds maximum limit of 180 characters; contains 187
-    |       | characters (Generic.Files.LineLength.MaxExceeded)
- 96 | ERROR | Line exceeds maximum limit of 180 characters; contains 185
-    |       | characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
+......W.....W.............W...........................E.....  60 / 201 (30%)
+E...E.......................................W.........E..... 120 / 201 (60%)
+E........W.....................EE...E.W...WE.E......E...W..E 180 / 201 (90%)
+.....................
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -64,14 +51,14 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ....24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php
+FILE: ...24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php~
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 53 | ERROR | [x] Closing brace indented incorrectly; expected 3 spaces,
-    |       |     found 2 (Squiz.WhiteSpace.ScopeClosingBrace.Indent)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 15 | WARNING | Duplicate class name "SMW\EventListenerRegistry" found;
+    |         | first defined in
+    |         | /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php
+    |         | on line 15 (Generic.Classes.DuplicateClassName.Found)
 ----------------------------------------------------------------------
 
 
@@ -156,14 +143,12 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...ARQLStore/QueryEngine/ConditionBuilder/ValueConditionBuilder.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
   80 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 161 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 181 characters (Generic.Files.LineLength.MaxExceeded)
- 181 | WARNING | The method parameter $orderByProperty is never used
+ 182 | WARNING | The method parameter $orderByProperty is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -207,11 +192,9 @@ FOUND 0 ERRORS AND 6 WARNINGS AFFECTING 5 LINES
 
 FILE: ...ns/SemanticMediaWiki/src/SPARQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
-  66 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 299 | ERROR | Empty ELSEIF statement detected
+ 300 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
@@ -253,15 +236,4 @@ FOUND 1 ERROR AFFECTING 1 LINE
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
-
-FILE: .../src/SQLStore/QueryEngine/Interpreter/DispatchingInterpreter.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 81 | ERROR | [x] File must end with a newline character
-    |       |     (Generic.Files.EndFileNewline.NotFound)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-Time: 6.2 secs; Memory: 37.5Mb
+Time: 6.28 secs; Memory: 37.5Mb
