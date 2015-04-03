@@ -6,10 +6,9 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               95
-[x] Generic.ControlStructures.InlineControlStructure.NotAllowed  62
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     59
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     61
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           46
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             41
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             42
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    31
 [ ] Generic.Files.LineLength.MaxExceeded                         28
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                25
@@ -18,34 +17,41 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Squiz.Functions.GlobalFunction.Found                         11
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH            6
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               6
+[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed          5
 [x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket4
-[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed          4
 [x] Generic.PHP.LowerCaseConstant.Found                          4
+[ ] Generic.Classes.DuplicateClassName.Found                     4
 [ ] PSR1.Files.SideEffects.FoundWithSymbols                      4
+[x] Generic.ControlStructures.InlineControlStructure.NotAllowed  3
 [x] Generic.Formatting.DisallowMultipleStatements.SameLine       3
 [ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps 3
 [x] Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle    2
-[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          2
 [x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations          2
+[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          2
 [x] Squiz.WhiteSpace.SemicolonSpacing.Incorrect                  2
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSE             2
-[ ] Generic.Classes.DuplicateClassName.Found                     2
 [x] Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceAfter    1
 [x] PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter          1
+[x] Squiz.WhiteSpace.ScopeClosingBrace.Indent                    1
 [ ] Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 ----------------------------------------------------------------------
-A TOTAL OF 493 SNIFF VIOLATIONS WERE FOUND IN 30 SOURCES
+A TOTAL OF 441 SNIFF VIOLATIONS WERE FOUND IN 31 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 12 MARKED SOURCES AUTOMATICALLY (118 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 13 MARKED SOURCES AUTOMATICALLY (61 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 11.16 secs; Memory: 33.5Mb
+Time: 11.21 secs; Memory: 35Mb
 
 ############################################################################
 
 vendor/bin/phpcs includes/* --standard=phpcs.xml --extensions=php -sp
+
+EEEE.EE.EEEEEEEE.EEEEEEEEEEEEEEEEE........E.........EEEEEE..  60 / 166 (36%)
+EW.E.E.E.E..E......W...W.EEEEEEEEW.EE.EWEEEE..EWEE.E.E.E.EE. 120 / 166 (72%)
+EEEEEEEWWWE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEEE..
+
 
 FILE: ...diawiki-1.24.1/extensions/SemanticMediaWiki/includes/Aliases.php
 ----------------------------------------------------------------------
@@ -386,7 +392,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 
 FILE: ...extensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Time.php
 ----------------------------------------------------------------------
-FOUND 13 ERRORS AND 2 WARNINGS AFFECTING 13 LINES
+FOUND 11 ERRORS AND 2 WARNINGS AFFECTING 11 LINES
 ----------------------------------------------------------------------
   96 | ERROR   | [ ] Each class must be in a namespace of at least one
      |         |     level (a top-level vendor name)
@@ -394,85 +400,71 @@ FOUND 13 ERRORS AND 2 WARNINGS AFFECTING 13 LINES
  105 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
      |         |     contains 260 characters
      |         |     (Generic.Files.LineLength.MaxExceeded)
- 135 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 135 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 160 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 194 | ERROR   | [ ] Function's cyclomatic complexity (18) exceeds
+ 196 | ERROR   | [ ] Function's cyclomatic complexity (18) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 232 | ERROR   | [ ] Empty ELSEIF statement detected
+ 234 | ERROR   | [ ] Empty ELSEIF statement detected
      |         |     (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
- 258 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
+ 260 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
      |         |     contains 184 characters
      |         |     (Generic.Files.LineLength.MaxExceeded)
- 297 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 299 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 605 | WARNING | [ ] The method parameter $linked is never used
+ 607 | WARNING | [ ] The method parameter $linked is never used
      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 605 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
+ 607 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
      |         |     "null" but found "NULL"
      |         |     (Generic.PHP.LowerCaseConstant.Found)
- 613 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
+ 615 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
      |         |     "null" but found "NULL"
      |         |     (Generic.PHP.LowerCaseConstant.Found)
- 617 | WARNING | [ ] The method parameter $linked is never used
+ 619 | WARNING | [ ] The method parameter $linked is never used
      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 617 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
+ 619 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
      |         |     "null" but found "NULL"
      |         |     (Generic.PHP.LowerCaseConstant.Found)
- 621 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
+ 623 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
      |         |     "null" but found "NULL"
      |         |     (Generic.PHP.LowerCaseConstant.Found)
- 755 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
 FILE: ...nsions/SemanticMediaWiki/includes/datavalues/SMW_DV_Quantity.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
+FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  17 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 144 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 144 | ERROR | [ ] Function's cyclomatic complexity (11) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 209 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  17 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 144 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 144 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
 FILE: ...extensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Bool.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AND 4 WARNINGS AFFECTING 8 LINES
+FOUND 2 ERRORS AND 4 WARNINGS AFFECTING 6 LINES
 ----------------------------------------------------------------------
-  12 | ERROR   | [ ] Each class must be in a namespace of at least one
-     |         |     level (a top-level vendor name)
-     |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  64 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-  67 | ERROR   | [ ] Empty IF statement detected
-     |         |     (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
-  86 | WARNING | [ ] The method parameter $linked is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  90 | WARNING | [ ] The method parameter $linker is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  94 | WARNING | [ ] The method parameter $linked is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  98 | WARNING | [ ] The method parameter $linker is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 117 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  12 | ERROR   | Each class must be in a namespace of at least one level
+     |         | (a top-level vendor name)
+     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+  69 | ERROR   | Empty IF statement detected
+     |         | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
+  88 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+  92 | WARNING | The method parameter $linker is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+  96 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 100 | WARNING | The method parameter $linker is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -504,18 +496,14 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 
 FILE: ...ons/SemanticMediaWiki/includes/datavalues/SMW_DV_Temperature.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  19 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  47 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 101 | ERROR | [ ] Function's cyclomatic complexity (15) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  19 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 103 | ERROR | Function's cyclomatic complexity (15) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -592,39 +580,33 @@ FOUND 1 ERROR AND 4 WARNINGS AFFECTING 5 LINES
 
 FILE: ...ns/SemanticMediaWiki/includes/datavalues/SMW_DV_PropertyList.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  15 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  85 | ERROR | [x] Language constructs must be followed by a single
-     |       |     space; expected 1 space but found 2
-     |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle)
- 117 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
+ 15 | ERROR | [ ] Each class must be in a namespace of at least one level
+    |       |     (a top-level vendor name)
+    |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 85 | ERROR | [x] Language constructs must be followed by a single space;
+    |       |     expected 1 space but found 2
+    |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
 FILE: ...tensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Record.php
 ----------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 4 LINES
+FOUND 4 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  29 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  38 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  38 | ERROR | [ ] Function's cyclomatic complexity (18) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 290 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 337 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  29 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+  38 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+  38 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 290 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -672,31 +654,19 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: .../extensions/SemanticMediaWiki/includes/export/SMW_Serializer.php
 ----------------------------------------------------------------------
-FOUND 7 ERRORS AFFECTING 7 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  35 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 143 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 144 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 145 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 180 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 232 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 251 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  35 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 261 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
 
 FILE: ...sions/SemanticMediaWiki/includes/export/SMW_ExportController.php
 ----------------------------------------------------------------------
-FOUND 17 ERRORS AFFECTING 15 LINES
+FOUND 9 ERRORS AFFECTING 8 LINES
 ----------------------------------------------------------------------
   25 | ERROR | [ ] Each class must be in a namespace of at least one
      |       |     level (a top-level vendor name)
@@ -708,34 +678,18 @@ FOUND 17 ERRORS AFFECTING 15 LINES
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  352 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     183 characters (Generic.Files.LineLength.MaxExceeded)
- 415 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 418 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 485 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+ 489 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 495 | ERROR | [x] Each PHP statement must be on a line by itself
+ 499 | ERROR | [x] Each PHP statement must be on a line by itself
      |       |     (Generic.Formatting.DisallowMultipleStatements.SameLine)
- 500 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 501 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 501 | ERROR | [x] Must use "self::" for local static member
+ 507 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 513 | ERROR | [x] Must use "self::" for local static member
+ 521 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 558 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 574 | ERROR | [ ] Empty CATCH statement detected
+ 584 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 721 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 722 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 723 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -760,68 +714,58 @@ FOUND 5 ERRORS AFFECTING 4 LINES
 
 FILE: ...ions/SemanticMediaWiki/includes/export/SMW_Serializer_Turtle.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
+FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  18 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 131 | ERROR | [ ] Function's nesting level (6) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 131 | ERROR | [ ] Function's cyclomatic complexity (16) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 132 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  18 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 131 | ERROR | Function's nesting level (6) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 131 | ERROR | Function's cyclomatic complexity (16) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
 FILE: ....1/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
 ----------------------------------------------------------------------
-FOUND 16 ERRORS AFFECTING 13 LINES
+FOUND 14 ERRORS AFFECTING 11 LINES
 ----------------------------------------------------------------------
-  17 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  70 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 141 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 141 | ERROR | [ ] Function's cyclomatic complexity (11) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 242 | ERROR | [ ] Function's nesting level (7) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 242 | ERROR | [ ] Function's cyclomatic complexity (19) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 267 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 342 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
-     |       |     187 characters (Generic.Files.LineLength.MaxExceeded)
- 428 | ERROR | [ ] Function's nesting level (5) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 473 | ERROR | [ ] Empty ELSE statement detected
-     |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
- 485 | ERROR | [ ] Function's cyclomatic complexity (18) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 514 | ERROR | [ ] Function's cyclomatic complexity (18) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 590 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
-     |       |     258 characters (Generic.Files.LineLength.MaxExceeded)
- 603 | ERROR | [ ] Function's cyclomatic complexity (11) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 657 | ERROR | [ ] Function's nesting level (5) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 657 | ERROR | [ ] Function's cyclomatic complexity (15) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  17 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 143 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 143 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 244 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 244 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 346 | ERROR | Line exceeds maximum limit of 180 characters; contains 187
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 432 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 477 | ERROR | Empty ELSE statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
+ 489 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 518 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 594 | ERROR | Line exceeds maximum limit of 180 characters; contains 258
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 607 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 661 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 661 | ERROR | Function's cyclomatic complexity (15) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -960,18 +904,12 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...icMediaWiki/includes/parserhooks/DocumentationParserFunction.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  59 | WARNING | [ ] The method parameter $type is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  90 | WARNING | [ ] The method parameter $type is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 138 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 197 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 59 | WARNING | The method parameter $type is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 90 | WARNING | The method parameter $type is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -1013,15 +951,11 @@ FOUND 7 ERRORS AFFECTING 5 LINES
 
 FILE: ...xtensions/SemanticMediaWiki/includes/query/SMW_QueryLanguage.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 18 | ERROR | [ ] Each class must be in a namespace of at least one level
-    |       |     (a top-level vendor name)
-    |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 56 | ERROR | [x] Inline control structures are not allowed
-    |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 18 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -1073,24 +1007,18 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...1/extensions/SemanticMediaWiki/includes/querypages/QueryPage.php
 ----------------------------------------------------------------------
-FOUND 7 ERRORS AFFECTING 7 LINES
+FOUND 5 ERRORS AFFECTING 5 LINES
 ----------------------------------------------------------------------
-  47 | ERROR | [ ] Visibility must be declared on method "getResults"
-     |       |     (Squiz.Scope.MethodScope.Missing)
-  53 | ERROR | [ ] Visibility must be declared on method "recache"
-     |       |     (Squiz.Scope.MethodScope.Missing)
-  57 | ERROR | [ ] Visibility must be declared on method
-     |       |     "isExpensive" (Squiz.Scope.MethodScope.Missing)
-  61 | ERROR | [ ] Visibility must be declared on method
-     |       |     "isSyndicated" (Squiz.Scope.MethodScope.Missing)
- 166 | ERROR | [ ] Visibility must be declared on method "doQuery"
-     |       |     (Squiz.Scope.MethodScope.Missing)
- 220 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 230 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  47 | ERROR | Visibility must be declared on method "getResults"
+     |       | (Squiz.Scope.MethodScope.Missing)
+  53 | ERROR | Visibility must be declared on method "recache"
+     |       | (Squiz.Scope.MethodScope.Missing)
+  57 | ERROR | Visibility must be declared on method "isExpensive"
+     |       | (Squiz.Scope.MethodScope.Missing)
+  61 | ERROR | Visibility must be declared on method "isSyndicated"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 166 | ERROR | Visibility must be declared on method "doQuery"
+     |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
 
@@ -1164,29 +1092,23 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: ...manticMediaWiki/includes/queryprinters/CategoryResultPrinter.php
 ----------------------------------------------------------------------
-FOUND 9 ERRORS AFFECTING 6 LINES
+FOUND 6 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
   47 | ERROR | [ ] Function's nesting level (6) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
   47 | ERROR | [ ] Function's cyclomatic complexity (22) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-  79 | ERROR | [x] Inline control structures are not allowed
+ 107 | ERROR | [x] Inline control structures are not allowed
      |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-  86 | ERROR | [x] Inline control structures are not allowed
+ 107 | ERROR | [x] Inline control structures are not allowed
      |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 105 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 105 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 105 | ERROR | [x] Each PHP statement must be on a line by itself
+ 107 | ERROR | [x] Each PHP statement must be on a line by itself
      |       |     (Generic.Formatting.DisallowMultipleStatements.SameLine)
- 114 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 116 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     182 characters (Generic.Files.LineLength.MaxExceeded)
- 145 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1265,20 +1187,18 @@ PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...s/SemanticMediaWiki/includes/queryprinters/ListResultPrinter.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 4 LINES
+FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
  307 | ERROR | [x] Expected 1 space after closing parenthesis; found
      |       |     0
      |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
  335 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 384 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 398 | ERROR | [x] Expected 1 space after closing parenthesis; found
+ 400 | ERROR | [x] Expected 1 space after closing parenthesis; found
      |       |     0
      |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1329,7 +1249,7 @@ FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 
 FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AND 1 WARNING AFFECTING 3 LINES
+FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
  138 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
@@ -1339,19 +1259,44 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 3 LINES
  202 | WARNING | [x] Usage of ELSE IF is discouraged; use ELSEIF
      |         |     instead
      |         |     (PSR2.ControlStructures.ElseIfDeclaration.NotAllowed)
- 291 | ERROR   | [x] Inline control structures are not allowed
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ....24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php~
+----------------------------------------------------------------------
+FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  22 | WARNING | [ ] Duplicate class name "SMW\RecurringEvents" found;
+     |         |     first defined in
+     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
+     |         |     on line 22
+     |         |     (Generic.Classes.DuplicateClassName.Found)
+ 138 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
+     |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 138 | ERROR   | [ ] Function's cyclomatic complexity (39) exceeds
+     |         |     allowed maximum of 10
+     |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 202 | WARNING | [x] Usage of ELSE IF is discouraged; use ELSEIF
+     |         |     instead
+     |         |     (PSR2.ControlStructures.ElseIfDeclaration.NotAllowed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...i-1.24.1/extensions/SemanticMediaWiki/includes/SemanticData.php~
+----------------------------------------------------------------------
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
+----------------------------------------------------------------------
+  30 | WARNING | [ ] Duplicate class name "SMW\SemanticData" found; first
+     |         |     defined in
+     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/SemanticData.php
+     |         |     on line 30
+     |         |     (Generic.Classes.DuplicateClassName.Found)
+ 444 | ERROR   | [x] Inline control structures are not allowed
      |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
-FILE: ...ki-1.24.1/extensions/SemanticMediaWiki/includes/SemanticData.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 444 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
@@ -1522,7 +1467,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 
 FILE: ...nsions/SemanticMediaWiki/includes/specials/SMW_SpecialBrowse.php
 ----------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 11 LINES
+FOUND 10 ERRORS AFFECTING 10 LINES
 ----------------------------------------------------------------------
   21 | ERROR | [ ] Each class must be in a namespace of at least one
      |       |     level (a top-level vendor name)
@@ -1542,14 +1487,12 @@ FOUND 11 ERRORS AFFECTING 11 LINES
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
  357 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 358 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 362 | ERROR | [x] Must use "self::" for local static member
+ 364 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 371 | ERROR | [x] Must use "self::" for local static member
+ 373 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1582,15 +1525,11 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: ...ensions/SemanticMediaWiki/includes/specials/SMW_SpecialTypes.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 18 | ERROR | [ ] Each class must be in a namespace of at least one level
-    |       |     (a top-level vendor name)
-    |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 62 | ERROR | [x] Inline control structures are not allowed
-    |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 18 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -1610,49 +1549,35 @@ FOUND 3 ERRORS AFFECTING 3 LINES
 
 FILE: ...xtensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php
 ----------------------------------------------------------------------
-FOUND 18 ERRORS AFFECTING 16 LINES
+FOUND 11 ERRORS AFFECTING 9 LINES
 ----------------------------------------------------------------------
   19 | ERROR | [ ] Each class must be in a namespace of at least one
      |       |     level (a top-level vendor name)
      |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  72 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+  72 | ERROR | [ ] Function's nesting level (5) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
   72 | ERROR | [ ] Function's cyclomatic complexity (21) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-  79 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-  87 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 136 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 154 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 185 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+ 192 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 185 | ERROR | [ ] Function's cyclomatic complexity (21) exceeds allowed
+ 192 | ERROR | [ ] Function's cyclomatic complexity (21) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 356 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 363 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     197 characters (Generic.Files.LineLength.MaxExceeded)
- 359 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 366 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     205 characters (Generic.Files.LineLength.MaxExceeded)
- 399 | ERROR | [x] Must use "self::" for local static member
+ 406 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 413 | ERROR | [x] Must use "self::" for local static member
+ 420 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 417 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 424 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     254 characters (Generic.Files.LineLength.MaxExceeded)
- 457 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 464 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     191 characters (Generic.Files.LineLength.MaxExceeded)
- 513 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 515 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 612 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1675,17 +1600,17 @@ FOUND 7 ERRORS AND 1 WARNING AFFECTING 8 LINES
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
   53 | WARNING | The method parameter $par is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 238 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 235 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 186 characters (Generic.Files.LineLength.MaxExceeded)
- 240 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 237 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 189 characters (Generic.Files.LineLength.MaxExceeded)
- 250 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 247 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 185 characters (Generic.Files.LineLength.MaxExceeded)
- 252 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 249 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 188 characters (Generic.Files.LineLength.MaxExceeded)
- 292 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 289 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 359 characters (Generic.Files.LineLength.MaxExceeded)
- 296 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 293 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 186 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1701,20 +1626,16 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: .../SemanticMediaWiki/includes/specials/SMW_SpecialPageProperty.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
+FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  21 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  30 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  30 | ERROR | [ ] Function's cyclomatic complexity (11) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 125 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 21 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 30 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+    |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 30 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+    |       | maximum of 10
+    |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -1739,15 +1660,11 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...xtensions/SemanticMediaWiki/includes/storage/SMW_QueryResult.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
-  25 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 104 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 25 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -1763,22 +1680,16 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...xtensions/SemanticMediaWiki/includes/storage/SMW_ResultArray.php
 ----------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 4 LINES
+FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  14 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 196 | ERROR | [ ] Function's nesting level (5) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 196 | ERROR | [ ] Function's cyclomatic complexity (14) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 197 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 286 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  14 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 196 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 196 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -1804,34 +1715,32 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...ticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3_Readers.php
 ----------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 11 LINES
+FOUND 10 ERRORS AFFECTING 10 LINES
 ----------------------------------------------------------------------
   17 | ERROR | [ ] Each class must be in a namespace of at least one
      |       |     level (a top-level vendor name)
      |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  81 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-  83 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 223 | ERROR | [ ] Empty CATCH statement detected
+  46 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 227 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 273 | ERROR | [ ] Function's cyclomatic complexity (17) exceeds allowed
+ 277 | ERROR | [ ] Function's cyclomatic complexity (17) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 277 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 382 | ERROR | [x] Expected 1 space after logical operator; 2 found
+ 284 | ERROR | [x] Closing brace indented incorrectly; expected 2 spaces,
+     |       |     found 3 (Squiz.WhiteSpace.ScopeClosingBrace.Indent)
+ 387 | ERROR | [x] Expected 1 space after logical operator; 2 found
      |       |     (Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceAfter)
- 458 | ERROR | [ ] Empty CATCH statement detected
+ 463 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 489 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+ 494 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 635 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+ 640 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 669 | ERROR | [ ] Empty CATCH statement detected
+ 674 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1918,22 +1827,18 @@ FOUND 8 ERRORS AFFECTING 7 LINES
 
 FILE: ...iaWiki/includes/storage/SQLStore/SMW_SQLStore3_SetupHandlers.php
 ----------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 4 LINES
+FOUND 4 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  23 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 320 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 320 | ERROR | [ ] Function's cyclomatic complexity (18) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 357 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 368 | ERROR | [ ] Empty IF statement detected
-     |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  23 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 320 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 320 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 370 | ERROR | Empty IF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
 
 
@@ -1969,7 +1874,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...ns/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php
 ----------------------------------------------------------------------
-FOUND 13 ERRORS AND 1 WARNING AFFECTING 12 LINES
+FOUND 10 ERRORS AND 1 WARNING AFFECTING 9 LINES
 ----------------------------------------------------------------------
   53 | ERROR   | [ ] Each class must be in a namespace of at least one
      |         |     level (a top-level vendor name)
@@ -1977,37 +1882,31 @@ FOUND 13 ERRORS AND 1 WARNING AFFECTING 12 LINES
  160 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 216 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 258 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 409 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 515 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
+ 518 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 563 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 566 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 563 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
+ 566 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 711 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 714 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 711 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
+ 714 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 742 | ERROR   | [x] Must use "self::" for local static member
-     |         |     reference
-     |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
  745 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 750 | ERROR   | [x] Must use "self::" for local static member
+ 748 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 805 | WARNING | [ ] Possible useless method overriding detected
+ 753 | ERROR   | [x] Must use "self::" for local static member
+     |         |     reference
+     |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
+ 808 | WARNING | [ ] Possible useless method overriding detected
      |         |     (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -2028,73 +1927,57 @@ FOUND 3 ERRORS AFFECTING 2 LINES
 
 FILE: ...s/SemanticMediaWiki/includes/storage/SQLStore/SMW_Sql3SmwIds.php
 ----------------------------------------------------------------------
-FOUND 8 ERRORS AND 2 WARNINGS AFFECTING 8 LINES
+FOUND 5 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
 ----------------------------------------------------------------------
-   52 | ERROR   | [ ] Each class must be in a namespace of at least one
-      |         |     level (a top-level vendor name)
-      |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-   60 | ERROR   | [ ] Class constants must be uppercase; expected
-      |         |     TABLENAME but found tableName
-      |         |     (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
-  334 | ERROR   | [ ] Function's nesting level (4) exceeds allowed
-      |         |     maximum of 3
-      |         |     (Generic.Metrics.NestingLevel.MaxExceeded)
-  334 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
-      |         |     allowed maximum of 10
-      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-  675 | ERROR   | [ ] Function's nesting level (4) exceeds allowed
-      |         |     maximum of 3
-      |         |     (Generic.Metrics.NestingLevel.MaxExceeded)
-  724 | ERROR   | [x] Inline control structures are not allowed
-      |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-  928 | WARNING | [ ] The method parameter $oldtitle is never used
-      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  928 | WARNING | [ ] The method parameter $newtitle is never used
-      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 1057 | ERROR   | [x] Inline control structures are not allowed
-      |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 1082 | ERROR   | [x] Inline control structures are not allowed
-      |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  52 | ERROR   | Each class must be in a namespace of at least one level
+     |         | (a top-level vendor name)
+     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+  60 | ERROR   | Class constants must be uppercase; expected TABLENAME
+     |         | but found tableName
+     |         | (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
+ 334 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 334 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+     |         | maximum of 10
+     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 675 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 930 | WARNING | The method parameter $oldtitle is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 930 | WARNING | The method parameter $newtitle is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
 FILE: ...extensions/SemanticMediaWiki/includes/storage/SMW_SQLHelpers.php
 ----------------------------------------------------------------------
-FOUND 9 ERRORS AND 1 WARNING AFFECTING 8 LINES
+FOUND 7 ERRORS AND 1 WARNING AFFECTING 6 LINES
 ----------------------------------------------------------------------
   13 | ERROR   | [ ] Each class must be in a namespace of at least one
      |         |     level (a top-level vendor name)
      |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 130 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 148 | ERROR   | [x] Must use "self::" for local static member
+ 150 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 154 | ERROR   | [x] Must use "self::" for local static member
+ 156 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 154 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
+ 156 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
      |         |     contains 212 characters
      |         |     (Generic.Files.LineLength.MaxExceeded)
- 159 | ERROR   | [x] Must use "self::" for local static member
+ 161 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 173 | WARNING | [ ] The method parameter $reportTo is never used
+ 175 | WARNING | [ ] The method parameter $reportTo is never used
      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 173 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
+ 175 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 402 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
+ 404 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 521 | ERROR   | [x] Inline control structures are not allowed
-     |         |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 11.1 secs; Memory: 33.5Mb
-
-
+Time: 11.24 secs; Memory: 35Mb
