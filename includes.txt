@@ -6,45 +6,42 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               94
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     58
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     57
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           46
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             43
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             41
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    31
-[ ] Generic.Files.LineLength.MaxExceeded                         28
+[ ] Generic.Files.LineLength.MaxExceeded                         27
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                25
 [ ] Squiz.Scope.MethodScope.Missing                              24
 [ ] Generic.Files.OneClassPerFile.MultipleFound                  20
 [ ] Squiz.Functions.GlobalFunction.Found                         11
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH            6
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               6
-[ ] Generic.Classes.DuplicateClassName.Found                     4
 [ ] PSR1.Files.SideEffects.FoundWithSymbols                      4
 [ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps 3
 [x] Generic.Formatting.DisallowMultipleStatements.SameLine       2
 [x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations          2
-[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          2
 [x] Squiz.WhiteSpace.SuperfluousWhitespace.EndLine               2
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSE             2
-[x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket1
-[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed          1
 [ ] Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 ----------------------------------------------------------------------
-A TOTAL OF 418 SNIFF VIOLATIONS WERE FOUND IN 25 SOURCES
+A TOTAL OF 406 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 7 MARKED SOURCES AUTOMATICALLY (41 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 4 MARKED SOURCES AUTOMATICALLY (37 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 11.26 secs; Memory: 33.25Mb
+Time: 10.89 secs; Memory: 31.75Mb
+
 
 ############################################################################
 
 vendor/bin/phpcs includes/* --standard=phpcs.xml --extensions=php -sp
 
-E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEEE........E.........EEEEEE..  60 / 162 (37%)
-E..E.EE.E..E..E......W...W.EEEEEEEEW.EE.EWEEEE..EWEE..EE.EEE 120 / 162 (74%)
-EEEWWWE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEEE..
+E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEEE........E.........EEEEEE..  60 / 158 (38%)
+E..E.E.E....E......W...W.EEEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEW 120 / 158 (76%)
+WWE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEEE..
 
 
 FILE: ...diawiki-1.24.1/extensions/SemanticMediaWiki/includes/Aliases.php
@@ -805,26 +802,6 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php~
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
-----------------------------------------------------------------------
-  35 | WARNING | [ ] Duplicate class name "SMW\Highlighter" found; first
-     |         |     defined in
-     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php
-     |         |     on line 35
-     |         |     (Generic.Classes.DuplicateClassName.Found)
-  92 | ERROR   | [x] Expected 1 space after closing parenthesis; found
-     |         |     0
-     |         |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
- 212 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
-     |         |     allowed maximum of 10
-     |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
 FILE: ...sions/SemanticMediaWiki/includes/interfaces/ObjectDictionary.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
@@ -835,24 +812,6 @@ FOUND 3 ERRORS AFFECTING 3 LINES
      |       | (PSR1.Classes.ClassDeclaration.MultipleClasses)
  101 | ERROR | Each interface must be in a file by itself
      |       | (PSR1.Classes.ClassDeclaration.MultipleClasses)
-----------------------------------------------------------------------
-
-
-FILE: ...24.1/extensions/SemanticMediaWiki/includes/NamespaceManager.php~
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  12 | WARNING | [ ] Duplicate class name "SMW\NamespaceManager" found;
-     |         |     first defined in
-     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/NamespaceManager.php
-     |         |     on line 12
-     |         |     (Generic.Classes.DuplicateClassName.Found)
- 189 | ERROR   | [x] Language constructs must be followed by a single
-     |         |     space; expected "include_once (" but found
-     |         |     "include_once("
-     |         |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1201,53 +1160,12 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ....24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php~
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 3 LINES
-----------------------------------------------------------------------
-  22 | WARNING | [ ] Duplicate class name "SMW\RecurringEvents" found;
-     |         |     first defined in
-     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
-     |         |     on line 22
-     |         |     (Generic.Classes.DuplicateClassName.Found)
- 138 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
-     |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 138 | ERROR   | [ ] Function's cyclomatic complexity (39) exceeds
-     |         |     allowed maximum of 10
-     |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 202 | WARNING | [x] Usage of ELSE IF is discouraged; use ELSEIF
-     |         |     instead
-     |         |     (PSR2.ControlStructures.ElseIfDeclaration.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
 FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
  75 | ERROR | Line exceeds maximum limit of 180 characters; contains 218
     |       | characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...ediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php~
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
-----------------------------------------------------------------------
- 15 | WARNING | [ ] Duplicate class name "SMW\Setup" found; first defined
-    |         |     in
-    |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
-    |         |     on line 15 (Generic.Classes.DuplicateClassName.Found)
- 75 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
-    |         |     contains 218 characters
-    |         |     (Generic.Files.LineLength.MaxExceeded)
- 79 | ERROR   | [x] Language constructs must be followed by a single
-    |         |     space; expected "include (" but found "include("
-    |         |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1853,4 +1771,4 @@ FOUND 7 ERRORS AND 1 WARNING AFFECTING 6 LINES
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 11.23 secs; Memory: 33.25Mb
+Time: 10.78 secs; Memory: 31.75Mb
