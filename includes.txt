@@ -6,49 +6,45 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               94
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     57
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     58
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           46
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             41
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             43
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    31
-[ ] Generic.Files.LineLength.MaxExceeded                         27
+[ ] Generic.Files.LineLength.MaxExceeded                         28
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                25
 [ ] Squiz.Scope.MethodScope.Missing                              24
 [ ] Generic.Files.OneClassPerFile.MultipleFound                  20
 [ ] Squiz.Functions.GlobalFunction.Found                         11
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH            6
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               6
-[x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket4
-[x] Generic.PHP.LowerCaseConstant.Found                          4
+[ ] Generic.Classes.DuplicateClassName.Found                     4
 [ ] PSR1.Files.SideEffects.FoundWithSymbols                      4
-[x] Generic.Formatting.DisallowMultipleStatements.SameLine       3
-[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed          3
 [ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps 3
-[x] Generic.ControlStructures.InlineControlStructure.NotAllowed  2
-[x] Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle    2
-[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          2
+[x] Generic.Formatting.DisallowMultipleStatements.SameLine       2
 [x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations          2
+[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          2
+[x] Squiz.WhiteSpace.SuperfluousWhitespace.EndLine               2
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSE             2
-[x] Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceAfter    1
-[x] PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter          1
-[x] Squiz.WhiteSpace.ScopeClosingBrace.Indent                    1
+[x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket1
+[x] PSR2.ControlStructures.ElseIfDeclaration.NotAllowed          1
 [ ] Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
-[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 ----------------------------------------------------------------------
-A TOTAL OF 425 SNIFF VIOLATIONS WERE FOUND IN 29 SOURCES
+A TOTAL OF 418 SNIFF VIOLATIONS WERE FOUND IN 25 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 12 MARKED SOURCES AUTOMATICALLY (56 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 7 MARKED SOURCES AUTOMATICALLY (41 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 10.6 secs; Memory: 31.75Mb
+Time: 11.26 secs; Memory: 33.25Mb
 
 ############################################################################
 
 vendor/bin/phpcs includes/* --standard=phpcs.xml --extensions=php -sp
 
-EEEE.EE.EEEEEEEE.EEEEEEEEEEEEEEEEE........E.........EEEEEE..  60 / 158 (38%)
-EW.E.E.E.E..E......W...W.EEEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEW 120 / 158 (76%)
-WWE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEEE..
+E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEEE........E.........EEEEEE..  60 / 162 (37%)
+E..E.EE.E..E..E......W...W.EEEEEEEEW.EE.EWEEEE..EWEE..EE.EEE 120 / 162 (74%)
+EEEWWWE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEEE..
 
 
 FILE: ...diawiki-1.24.1/extensions/SemanticMediaWiki/includes/Aliases.php
@@ -195,18 +191,6 @@ FOUND 57 ERRORS AND 1 WARNING AFFECTING 21 LINES
  74 | ERROR   | Each class must be in a namespace of at least one level
     |         | (a top-level vendor name)
     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...tensions/SemanticMediaWiki/includes/articlepages/ConceptPage.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 92 | ERROR | [x] Language constructs must be followed by a single space;
-    |       |     expected 1 space but found 2
-    |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -390,44 +374,28 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 
 FILE: ...extensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Time.php
 ----------------------------------------------------------------------
-FOUND 11 ERRORS AND 2 WARNINGS AFFECTING 11 LINES
+FOUND 7 ERRORS AND 2 WARNINGS AFFECTING 9 LINES
 ----------------------------------------------------------------------
-  96 | ERROR   | [ ] Each class must be in a namespace of at least one
-     |         |     level (a top-level vendor name)
-     |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 105 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
-     |         |     contains 260 characters
-     |         |     (Generic.Files.LineLength.MaxExceeded)
- 135 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
-     |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 196 | ERROR   | [ ] Function's cyclomatic complexity (18) exceeds
-     |         |     allowed maximum of 10
-     |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 234 | ERROR   | [ ] Empty ELSEIF statement detected
-     |         |     (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
- 260 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
-     |         |     contains 184 characters
-     |         |     (Generic.Files.LineLength.MaxExceeded)
- 299 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
-     |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 607 | WARNING | [ ] The method parameter $linked is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 607 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
-     |         |     "null" but found "NULL"
-     |         |     (Generic.PHP.LowerCaseConstant.Found)
- 615 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
-     |         |     "null" but found "NULL"
-     |         |     (Generic.PHP.LowerCaseConstant.Found)
- 619 | WARNING | [ ] The method parameter $linked is never used
-     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 619 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
-     |         |     "null" but found "NULL"
-     |         |     (Generic.PHP.LowerCaseConstant.Found)
- 623 | ERROR   | [x] TRUE, FALSE and NULL must be lowercase; expected
-     |         |     "null" but found "NULL"
-     |         |     (Generic.PHP.LowerCaseConstant.Found)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  96 | ERROR   | Each class must be in a namespace of at least one level
+     |         | (a top-level vendor name)
+     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 105 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+     |         | 260 characters (Generic.Files.LineLength.MaxExceeded)
+ 135 | ERROR   | Function's nesting level (5) exceeds allowed maximum of
+     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 196 | ERROR   | Function's cyclomatic complexity (18) exceeds allowed
+     |         | maximum of 10
+     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 234 | ERROR   | Empty ELSEIF statement detected
+     |         | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+ 260 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+     |         | 184 characters (Generic.Files.LineLength.MaxExceeded)
+ 299 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 607 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 619 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -578,16 +546,11 @@ FOUND 1 ERROR AND 4 WARNINGS AFFECTING 5 LINES
 
 FILE: ...ns/SemanticMediaWiki/includes/datavalues/SMW_DV_PropertyList.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 15 | ERROR | [ ] Each class must be in a namespace of at least one level
-    |       |     (a top-level vendor name)
-    |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 85 | ERROR | [x] Language constructs must be followed by a single space;
-    |       |     expected 1 space but found 2
-    |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 15 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -793,21 +756,6 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...sions/SemanticMediaWiki/includes/formatters/MessageFormatter.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
-----------------------------------------------------------------------
- 211 | WARNING | [x] Usage of ELSE IF is discouraged; use ELSEIF
-     |         |     instead
-     |         |     (PSR2.ControlStructures.ElseIfDeclaration.NotAllowed)
- 215 | WARNING | [x] Usage of ELSE IF is discouraged; use ELSEIF
-     |         |     instead
-     |         |     (PSR2.ControlStructures.ElseIfDeclaration.NotAllowed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-----------------------------------------------------------------------
-
-
 FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/GlobalFunctions.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 11 WARNINGS AFFECTING 11 LINES
@@ -849,14 +797,29 @@ FOUND 3 ERRORS AND 11 WARNINGS AFFECTING 11 LINES
 
 FILE: ...iki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
-  92 | ERROR | [x] Expected 1 space after closing parenthesis; found
-     |       |     0
-     |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
- 212 | ERROR | [ ] Function's cyclomatic complexity (11) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 212 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
+FILE: ...ki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php~
+----------------------------------------------------------------------
+FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
+----------------------------------------------------------------------
+  35 | WARNING | [ ] Duplicate class name "SMW\Highlighter" found; first
+     |         |     defined in
+     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php
+     |         |     on line 35
+     |         |     (Generic.Classes.DuplicateClassName.Found)
+  92 | ERROR   | [x] Expected 1 space after closing parenthesis; found
+     |         |     0
+     |         |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
+ 212 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
+     |         |     allowed maximum of 10
+     |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
@@ -875,14 +838,19 @@ FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ....24.1/extensions/SemanticMediaWiki/includes/NamespaceManager.php
+FILE: ...24.1/extensions/SemanticMediaWiki/includes/NamespaceManager.php~
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 189 | ERROR | [x] Language constructs must be followed by a single
-     |       |     space; expected "include_once (" but found
-     |       |     "include_once("
-     |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
+  12 | WARNING | [ ] Duplicate class name "SMW\NamespaceManager" found;
+     |         |     first defined in
+     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/NamespaceManager.php
+     |         |     on line 12
+     |         |     (Generic.Classes.DuplicateClassName.Found)
+ 189 | ERROR   | [x] Language constructs must be followed by a single
+     |         |     space; expected "include_once (" but found
+     |         |     "include_once("
+     |         |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
@@ -986,18 +954,15 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/query/SMW_Query.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  31 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  40 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 237 | ERROR | [x] Expected 1 space after closing parenthesis; found
-     |       |     0
-     |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
+ 31 | ERROR | [ ] Each class must be in a namespace of at least one level
+    |       |     (a top-level vendor name)
+    |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 40 | ERROR | [x] Must use "self::" for local static member reference
+    |       |     (Squiz.Classes.SelfMemberReference.NotUsed)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -1088,23 +1053,15 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: ...manticMediaWiki/includes/queryprinters/CategoryResultPrinter.php
 ----------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 3 LINES
+FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  47 | ERROR | [ ] Function's nesting level (6) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  47 | ERROR | [ ] Function's cyclomatic complexity (22) exceeds allowed
-     |       |     maximum of 10
-     |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 107 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 107 | ERROR | [x] Inline control structures are not allowed
-     |       |     (Generic.ControlStructures.InlineControlStructure.NotAllowed)
- 107 | ERROR | [x] Each PHP statement must be on a line by itself
-     |       |     (Generic.Formatting.DisallowMultipleStatements.SameLine)
- 116 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
-     |       |     182 characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  47 | ERROR | Function's nesting level (6) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+  47 | ERROR | Function's cyclomatic complexity (22) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 120 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -1158,43 +1115,32 @@ FOUND 1 ERROR AND 2 WARNINGS AFFECTING 3 LINES
 
 FILE: ...s/SemanticMediaWiki/includes/queryprinters/FeedResultPrinter.php
 ----------------------------------------------------------------------
-FOUND 6 ERRORS AND 1 WARNING AFFECTING 7 LINES
+FOUND 5 ERRORS AND 1 WARNING AFFECTING 6 LINES
 ----------------------------------------------------------------------
-   3 | ERROR   | [x] There must be one blank line after the namespace
-     |         |     declaration
-     |         |     (PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter)
-   4 | ERROR   | [x] There must be one USE keyword per declaration
-     |         |     (PSR2.Namespaces.UseDeclaration.MultipleDeclarations)
    5 | ERROR   | [x] There must be one USE keyword per declaration
      |         |     (PSR2.Namespaces.UseDeclaration.MultipleDeclarations)
-  42 | WARNING | [ ] The method parameter $queryResult is never used
+   6 | ERROR   | [x] There must be one USE keyword per declaration
+     |         |     (PSR2.Namespaces.UseDeclaration.MultipleDeclarations)
+  43 | WARNING | [ ] The method parameter $queryResult is never used
      |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 157 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
+ 158 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
      |         |     contains 213 characters
      |         |     (Generic.Files.LineLength.MaxExceeded)
- 238 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 239 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 243 | ERROR   | [ ] Empty IF statement detected
+ 244 | ERROR   | [ ] Empty IF statement detected
      |         |     (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
 FILE: ...s/SemanticMediaWiki/includes/queryprinters/ListResultPrinter.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 307 | ERROR | [x] Expected 1 space after closing parenthesis; found
-     |       |     0
-     |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
- 335 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
-     |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 400 | ERROR | [x] Expected 1 space after closing parenthesis; found
-     |       |     0
-     |       |     (Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 335 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -1245,8 +1191,25 @@ FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 
 FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
+FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
+ 138 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 138 | ERROR | Function's cyclomatic complexity (39) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
+FILE: ....24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php~
+----------------------------------------------------------------------
+FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  22 | WARNING | [ ] Duplicate class name "SMW\RecurringEvents" found;
+     |         |     first defined in
+     |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
+     |         |     on line 22
+     |         |     (Generic.Classes.DuplicateClassName.Found)
  138 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
  138 | ERROR   | [ ] Function's cyclomatic complexity (39) exceeds
@@ -1262,13 +1225,27 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 75 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
-    |       |     218 characters (Generic.Files.LineLength.MaxExceeded)
- 79 | ERROR | [x] Language constructs must be followed by a single space;
-    |       |     expected "include (" but found "include("
-    |       |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
+ 75 | ERROR | Line exceeds maximum limit of 180 characters; contains 218
+    |       | characters (Generic.Files.LineLength.MaxExceeded)
+----------------------------------------------------------------------
+
+
+FILE: ...ediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php~
+----------------------------------------------------------------------
+FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 15 | WARNING | [ ] Duplicate class name "SMW\Setup" found; first defined
+    |         |     in
+    |         |     /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
+    |         |     on line 15 (Generic.Classes.DuplicateClassName.Found)
+ 75 | ERROR   | [ ] Line exceeds maximum limit of 180 characters;
+    |         |     contains 218 characters
+    |         |     (Generic.Files.LineLength.MaxExceeded)
+ 79 | ERROR   | [x] Language constructs must be followed by a single
+    |         |     space; expected "include (" but found "include("
+    |         |     (Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
@@ -1623,10 +1600,10 @@ FOUND 10 ERRORS AFFECTING 10 LINES
  277 | ERROR | [ ] Function's cyclomatic complexity (17) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 284 | ERROR | [x] Closing brace indented incorrectly; expected 2 spaces,
-     |       |     found 3 (Squiz.WhiteSpace.ScopeClosingBrace.Indent)
- 387 | ERROR | [x] Expected 1 space after logical operator; 2 found
-     |       |     (Squiz.WhiteSpace.LogicalOperatorSpacing.TooMuchSpaceAfter)
+ 283 | ERROR | [x] Whitespace found at end of line
+     |       |     (Squiz.WhiteSpace.SuperfluousWhitespace.EndLine)
+ 284 | ERROR | [x] Whitespace found at end of line
+     |       |     (Squiz.WhiteSpace.SuperfluousWhitespace.EndLine)
  463 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
  494 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
@@ -1876,4 +1853,4 @@ FOUND 7 ERRORS AND 1 WARNING AFFECTING 6 LINES
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 10.61 secs; Memory: 31.75Mb
+Time: 11.23 secs; Memory: 33.25Mb
