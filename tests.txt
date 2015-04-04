@@ -9,28 +9,28 @@ PSR1.Classes.ClassDeclaration.MultipleClasses                    3
 Generic.Files.OneClassPerFile.MultipleFound                      3
 Generic.Metrics.NestingLevel.MaxExceeded                         3
 PSR1.Files.SideEffects.FoundWithSymbols                          3
-Generic.CodeAnalysis.UnusedFunctionParameter.Found               2
 Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
+Generic.CodeAnalysis.UnusedFunctionParameter.Found               1
 Generic.Metrics.CyclomaticComplexity.MaxExceeded                 1
 Internal.NoCodeFound                                             1
 ----------------------------------------------------------------------
-A TOTAL OF 17 SNIFF VIOLATIONS WERE FOUND IN 8 SOURCES
+A TOTAL OF 16 SNIFF VIOLATIONS WERE FOUND IN 8 SOURCES
 ----------------------------------------------------------------------
 
-Time: 16.82 secs; Memory: 50Mb
+Time: 17.25 secs; Memory: 51.25Mb
 
 ############################################################################
 
 vendor/bin/phpcs tests/* --standard=phpcs.xml --extensions=php -sp
 
-.....................................................E.....W  60 / 422 (14%)
-..W......................................................... 120 / 422 (28%)
-..............E............E....E.................E......... 180 / 422 (43%)
-......................E......W.............................. 240 / 422 (57%)
-............................................................ 300 / 422 (71%)
-............W...E...................W....................... 360 / 422 (85%)
-............................................................ 420 / 422 (100%)
-.W
+.....................................................E.....W  60 / 426 (14%)
+..W......................................................... 120 / 426 (28%)
+.............E............E....E.................E.......... 180 / 426 (42%)
+.......................E.................................... 240 / 426 (56%)
+............................................................ 300 / 426 (70%)
+...............W....E...................W................... 360 / 426 (85%)
+............................................................ 420 / 426 (99%)
+.....W
 
 
 FILE: ...ediaWiki/tests/phpunit/Utils/Validators/QueryResultValidator.php
@@ -119,15 +119,6 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...sts/phpunit/includes/formatters/ParserParameterFormatterTest.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 108 | WARNING | The method parameter $params is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
 FILE: ...Wiki/tests/phpunit/includes/Exporter/Element/ExpResourceTest.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -169,4 +160,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 17.26 secs; Memory: 50Mb
+Time: 17.71 secs; Memory: 51.25Mb
