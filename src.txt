@@ -6,31 +6,30 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           11
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     5
 [ ] Squiz.Scope.MethodScope.Missing                              5
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     3
 [ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             2
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    1
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
-[ ] Generic.Classes.DuplicateClassName.Found                     1
 ----------------------------------------------------------------------
-A TOTAL OF 29 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
+A TOTAL OF 30 SNIFF VIOLATIONS WERE FOUND IN 9 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 6.16 secs; Memory: 37.5Mb
+Time: 6.51 secs; Memory: 39Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W.....W.............W...........................E.....  60 / 201 (30%)
-E...E.......................................W.........E..... 120 / 201 (60%)
-E........W.....................EE...E.W...WE.E......E...W..E 180 / 201 (90%)
-.....................
+......W.....W...........E...............................E...  60 / 207 (29%)
+..E...E.......................................W.........E... 120 / 207 (58%)
+..E........W.........E...............EE...E.W...WE.E......E. 180 / 207 (87%)
+..W..E.....................
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -51,14 +50,12 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php~
+FILE: ...SemanticMediaWiki/src/Deserializers/SemanticDataDeserializer.php
 ----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 15 | WARNING | Duplicate class name "SMW\EventListenerRegistry" found;
-    |         | first defined in
-    |         | /var/www/html/mediawiki-1.24.1/extensions/SemanticMediaWiki/src/EventListenerRegistry.php
-    |         | on line 15 (Generic.Classes.DuplicateClassName.Found)
+ 63 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+    |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -132,6 +129,15 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...ions/SemanticMediaWiki/src/Serializers/QueryResultSerializer.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 120 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...ore/QueryEngine/ConditionBuilder/ConjunctionConditionBuilder.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -148,7 +154,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
   80 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 182 | WARNING | The method parameter $orderByProperty is never used
+ 183 | WARNING | The method parameter $orderByProperty is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -194,7 +200,7 @@ FILE: ...ns/SemanticMediaWiki/src/SPARQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 300 | ERROR | Empty ELSEIF statement detected
+ 301 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
@@ -236,4 +242,4 @@ FOUND 1 ERROR AFFECTING 1 LINE
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
-Time: 6.28 secs; Memory: 37.5Mb
+Time: 6.74 secs; Memory: 39Mb
