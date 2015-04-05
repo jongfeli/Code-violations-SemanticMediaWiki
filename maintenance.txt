@@ -3,16 +3,97 @@ vendor/bin/phpcs maintenance/* --standard=phpcs.xml --extensions=php -s --report
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
-    SOURCE                                                       COUNT
+SOURCE                                                           COUNT
 ----------------------------------------------------------------------
-[x] Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect          8
-[ ] Generic.Files.LineLength.MaxExceeded                         7
-[ ] PSR1.Files.SideEffects.FoundWithSymbols                      5
-[x] Generic.Files.EndFileNewline.NotFound                        2
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             1
-[ ] Internal.NoCodeFound                                         1
+PSR1.Files.SideEffects.FoundWithSymbols                          5
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 1
+Internal.NoCodeFound                                             1
 ----------------------------------------------------------------------
-A TOTAL OF 24 SNIFF VIOLATIONS WERE FOUND IN 6 SOURCES
+A TOTAL OF 7 SNIFF VIOLATIONS WERE FOUND IN 3 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (10 VIOLATIONS IN TOTAL)
+
+Time: 191ms; Memory: 4Mb
+
+#####################################################################################
+
+vendor/bin/phpcs maintenance/* --standard=phpcs.xml --extensions=php -sp
+
+EWWWWW....
+
+
+FILE: ...wiki-1.24.1/extensions/SemanticMediaWiki/maintenance/dumpRDF.php
 ----------------------------------------------------------------------
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
+----------------------------------------------------------------------
+   1 | WARNING | A file should declare new symbols (classes, functions,
+     |         | constants, etc.) and cause no other side effects, or it
+     |         | should execute logic with side effects, but should not do
+     |         | both. The first symbol is defined on line 41 and the first
+     |         | side effect is on line 8.
+     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
+ 122 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+     |         | maximum of 10
+     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
+FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/maintenance/README
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | No PHP code was found in this file and short open tags are
+   |         | not allowed by this install of PHP. This file may be using
+   |         | short open tags but PHP does not allow them.
+   |         | (Internal.NoCodeFound)
+----------------------------------------------------------------------
+
+
+FILE: ...extensions/SemanticMediaWiki/maintenance/rebuildConceptCache.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 67 and the first side effect
+   |         | is on line 9. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+
+FILE: ...-1.24.1/extensions/SemanticMediaWiki/maintenance/rebuildData.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 51 and the first side effect
+   |         | is on line 9. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+
+FILE: ...ions/SemanticMediaWiki/maintenance/rebuildPropertyStatistics.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 21 and the first side effect
+   |         | is on line 9. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+
+FILE: ...i-1.24.1/extensions/SemanticMediaWiki/maintenance/setupStore.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 45 and the first side effect
+   |         | is on line 8. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+Time: 193ms; Memory: 4Mb
+
