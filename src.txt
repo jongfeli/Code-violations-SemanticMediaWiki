@@ -20,16 +20,16 @@ A TOTAL OF 30 SNIFF VIOLATIONS WERE FOUND IN 9 SOURCES
 PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 6.51 secs; Memory: 39Mb
+Time: 6.45 secs; Memory: 38.25Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W.....W...........E...............................E...  60 / 207 (29%)
-..E...E.......................................W.........E... 120 / 207 (58%)
-..E........W.........E...............EE...E.W...WE.E......E. 180 / 207 (87%)
-..W..E.....................
+......W.....W...........E...............................E...  60 / 210 (29%)
+..E...E.......................................W.........E... 120 / 210 (57%)
+..E........W.........E...........EEEW.........WE..E......... 180 / 210 (86%)
+.E...W..E.....................
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -138,60 +138,60 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ore/QueryEngine/ConditionBuilder/ConjunctionConditionBuilder.php
+FILE: ...c/SPARQLStore/QueryEngine/Interpreter/DisjunctionInterpreter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 162 | ERROR | Empty ELSEIF statement detected
-     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
-----------------------------------------------------------------------
-
-
-FILE: ...ARQLStore/QueryEngine/ConditionBuilder/ValueConditionBuilder.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  80 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 183 | WARNING | The method parameter $orderByProperty is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
-FILE: ...ore/QueryEngine/ConditionBuilder/DisjunctionConditionBuilder.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 163 | ERROR | Empty IF statement detected
+ 156 | ERROR | Empty IF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
 
 
-FILE: ...ARQLStore/QueryEngine/ConditionBuilder/ThingConditionBuilder.php
+FILE: ...c/SPARQLStore/QueryEngine/Interpreter/ConjunctionInterpreter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 155 | ERROR | Empty ELSEIF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+----------------------------------------------------------------------
+
+
+FILE: ...RQLStore/QueryEngine/Interpreter/ValueDescriptionInterpreter.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
+----------------------------------------------------------------------
+  63 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
+     |         | maximum of 10
+     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 169 | WARNING | The method parameter $orderByProperty is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...RQLStore/QueryEngine/Interpreter/ThingDescriptionInterpreter.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 71 | WARNING | The method parameter $description is never used
+ 54 | WARNING | The method parameter $description is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...emanticMediaWiki/src/SPARQLStore/QueryEngine/RawResultParser.php
+FILE: ...anticMediaWiki/src/SPARQLStore/QueryEngine/XmlResponseParser.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 6 WARNINGS AFFECTING 5 LINES
 ----------------------------------------------------------------------
- 146 | WARNING | The method parameter $parser is never used
+ 145 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 156 | WARNING | The method parameter $parser is never used
+ 155 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 173 | WARNING | Avoid function calls in a FOR loop test part
+ 172 | WARNING | Avoid function calls in a FOR loop test part
      |         | (Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed)
- 196 | WARNING | The method parameter $parser is never used
+ 195 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 196 | WARNING | The method parameter $elementTag is never used
+ 195 | WARNING | The method parameter $elementTag is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 203 | WARNING | The method parameter $parser is never used
+ 202 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -242,4 +242,4 @@ FOUND 1 ERROR AFFECTING 1 LINE
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
-Time: 6.74 secs; Memory: 39Mb
+Time: 6.53 secs; Memory: 38.25Mb
