@@ -22,7 +22,7 @@
 	
 	if ( $subCondition instanceof FalseCondition ) {
       return new FalseCondition();
-  } // @codingStandardsIgnoreStartphpcs, ignore --sniffs=.....
+  } // @codingStandardsIgnoreStart phpcs, ignore --sniffs=.....
   elseif ( $subCondition instanceof TrueCondition ) {
         // ignore true conditions in a conjunction
   } // @codingStandardsIgnoreEnd
