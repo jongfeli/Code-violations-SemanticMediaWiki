@@ -39,6 +39,6 @@ Time: 37.2 secs; Memory: 51.5Mb
 
 ############################################################################
 
-tests/* src/* resources/* maintenance/* languages/* includes/* --standard=phpcs.xml --extensions=php -sp
+vendor/bin/phpcs tests/* src/* resources/* maintenance/* languages/* includes/* --standard=phpcs.xml --extensions=php -sp
 
 
