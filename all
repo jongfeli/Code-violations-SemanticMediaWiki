@@ -36,3 +36,9 @@ PHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (40 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
 Time: 37.2 secs; Memory: 51.5Mb
+
+############################################################################
+
+tests/* src/* resources/* maintenance/* languages/* includes/* --standard=phpcs.xml --extensions=php -sp
+
+
