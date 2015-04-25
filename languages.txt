@@ -11,16 +11,15 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.Files.LineLength.MaxExceeded                         7
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    5
 [ ] Squiz.Classes.ValidClassName.NotCamelCaps                    3
-[x] Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore             1
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           1
 [ ] Generic.Metrics.NestingLevel.MaxExceeded                     1
 ----------------------------------------------------------------------
-A TOTAL OF 70 SNIFF VIOLATIONS WERE FOUND IN 9 SOURCES
+A TOTAL OF 69 SNIFF VIOLATIONS WERE FOUND IN 8 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (6 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (5 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 808ms; Memory: 15.5Mb
+Time: 809ms; Memory: 15.75Mb
 
 ######################################################################################
 
@@ -87,24 +86,19 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 
 FILE: ...extensions/SemanticMediaWiki/languages/SMW_LanguageDe_formal.php
 ----------------------------------------------------------------------
-FOUND 3 ERRORS AND 1 WARNING AFFECTING 2 LINES
+FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  1 | WARNING | [ ] A file should declare new symbols (classes,
-    |         |     functions, constants, etc.) and cause no other side
-    |         |     effects, or it should execute logic with side effects,
-    |         |     but should not do both. The first symbol is defined on
-    |         |     line 26 and the first side effect is on line 12.
-    |         |     (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | [ ] Each class must be in a namespace of at least one
-    |         |     level (a top-level vendor name)
-    |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 26 | ERROR   | [ ] Class name "SMWLanguageDe_formal" is not in camel
-    |         |     caps format
-    |         |     (Squiz.Classes.ValidClassName.NotCamelCaps)
- 26 | ERROR   | [x] Closing brace must be on a line by itself
-    |         |     (Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  1 | WARNING | A file should declare new symbols (classes, functions,
+    |         | constants, etc.) and cause no other side effects, or it
+    |         | should execute logic with side effects, but should not do
+    |         | both. The first symbol is defined on line 26 and the first
+    |         | side effect is on line 12.
+    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
+ 26 | ERROR   | Each class must be in a namespace of at least one level
+    |         | (a top-level vendor name)
+    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 26 | ERROR   | Class name "SMWLanguageDe_formal" is not in camel caps
+    |         | format (Squiz.Classes.ValidClassName.NotCamelCaps)
 ----------------------------------------------------------------------
 
 
@@ -433,4 +427,4 @@ FOUND 1 ERROR AND 2 WARNINGS AFFECTING 2 LINES
     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
-Time: 817ms; Memory: 15.5Mb
+Time: 831ms; Memory: 15.75Mb
