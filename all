@@ -5,37 +5,40 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
-[ ] PSR1.Classes.ClassDeclaration.MissingNamespace               115
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     66
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           59
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             45
+[ ] PSR1.Classes.ClassDeclaration.MissingNamespace               113
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     65
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           60
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             44
 [ ] Squiz.Scope.MethodScope.Missing                              39
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    37
 [ ] PSR1.Files.SideEffects.FoundWithSymbols                      33
-[ ] Generic.Files.LineLength.MaxExceeded                         28
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                27
+[ ] Generic.Files.LineLength.MaxExceeded                         25
 [ ] Generic.Files.OneClassPerFile.MultipleFound                  22
 [ ] Squiz.Functions.GlobalFunction.Found                         11
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               7
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH            6
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           4
+[x] Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket3
 [ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps 3
 [ ] Squiz.Classes.ValidClassName.NotCamelCaps                    3
 [x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations          2
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           2
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSE             2
 [ ] Internal.NoCodeFound                                         2
+[x] Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed            1
 [x] Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore             1
+[x] Generic.Files.EndFileNewline.NotFound                        1
 [ ] Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH          1
 ----------------------------------------------------------------------
-A TOTAL OF 517 SNIFF VIOLATIONS WERE FOUND IN 24 SOURCES
+A TOTAL OF 516 SNIFF VIOLATIONS WERE FOUND IN 27 SOURCES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SOURCES AUTOMATICALLY (40 VIOLATIONS IN TOTAL)
+PHPCBF CAN FIX THE 6 MARKED SOURCES AUTOMATICALLY (45 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 37.2 secs; Memory: 51.5Mb
+Time: 36.74 secs; Memory: 48.5Mb
 
 ############################################################################
 
