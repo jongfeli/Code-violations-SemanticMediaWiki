@@ -5,31 +5,32 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           11
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     5
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           15
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     7
 [ ] Squiz.Scope.MethodScope.Missing                              5
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             2
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             3
+[ ] Generic.Files.LineLength.MaxExceeded                         2
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    1
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
 ----------------------------------------------------------------------
-A TOTAL OF 30 SNIFF VIOLATIONS WERE FOUND IN 9 SOURCES
+A TOTAL OF 39 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 6.45 secs; Memory: 38.25Mb
+Time: 7.07 secs; Memory: 39.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W.....W...........E...............................E...  60 / 210 (29%)
-..E...E.......................................W.........E... 120 / 210 (57%)
-..E........W.........E...........EEEW.........WE..E......... 180 / 210 (86%)
-.E...W..E.....................
+......W....W............W.E.................................  60 / 222 (27%)
+E.....E...E..........................................W...... 120 / 222 (54%)
+..E.....E........W.........E...........EEEW.........WE..E... 180 / 222 (81%)
+.........E..W..E.....E.E..................
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -47,6 +48,21 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
  81 | WARNING | The method parameter $ttl is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...24.1/extensions/SemanticMediaWiki/src/DataValues/ImportValue.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
+----------------------------------------------------------------------
+ 102 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 106 | WARNING | The method parameter $linker is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 110 | WARNING | The method parameter $linked is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 118 | WARNING | The method parameter $linker is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -81,11 +97,11 @@ FILE: ...i-1.24.1/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
- 273 | ERROR | Visibility must be declared on method "affectedRows"
+ 278 | ERROR | Visibility must be declared on method "affectedRows"
      |       | (Squiz.Scope.MethodScope.Missing)
- 310 | ERROR | Visibility must be declared on method "insertId"
+ 315 | ERROR | Visibility must be declared on method "insertId"
      |       | (Squiz.Scope.MethodScope.Missing)
- 328 | ERROR | Visibility must be declared on method "update"
+ 333 | ERROR | Visibility must be declared on method "update"
      |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -200,7 +216,7 @@ FILE: ...ns/SemanticMediaWiki/src/SPARQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 301 | ERROR | Empty ELSEIF statement detected
+ 296 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
@@ -214,14 +230,15 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ions/SemanticMediaWiki/src/SQLStore/QueryEngine/SqlQueryPart.php
+FILE: ...cMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 67 | ERROR | [x] Must use "self::" for local static member reference
-    |       |     (Squiz.Classes.SelfMemberReference.NotUsed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+ 131 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 131 | ERROR | Function's cyclomatic complexity (26) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -238,8 +255,32 @@ FILE: ...src/SQLStore/QueryEngine/Interpreter/SomePropertyInterpreter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 216 | ERROR | Empty ELSEIF statement detected
+ 227 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
-Time: 6.53 secs; Memory: 38.25Mb
+
+FILE: ...ions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegment.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 67 | ERROR | [x] Must use "self::" for local static member reference
+    |       |     (Squiz.Classes.SelfMemberReference.NotUsed)
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...sions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 181 | ERROR | Line exceeds maximum limit of 180 characters; contains 285
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 356 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 446 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+----------------------------------------------------------------------
+
+Time: 7.16 secs; Memory: 39.5Mb
