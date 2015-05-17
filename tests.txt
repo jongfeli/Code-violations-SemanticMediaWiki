@@ -17,7 +17,7 @@ Internal.NoCodeFound                                             1
 A TOTAL OF 15 SNIFF VIOLATIONS WERE FOUND IN 8 SOURCES
 ----------------------------------------------------------------------
 
-Time: 17.17 secs; Memory: 45Mb
+Time: 16.99 secs; Memory: 43.25Mb
 
 ############################################################################
 
