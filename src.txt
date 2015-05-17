@@ -5,7 +5,7 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           15
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           14
 [ ] Generic.Metrics.NestingLevel.MaxExceeded                     7
 [ ] Squiz.Scope.MethodScope.Missing                              5
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
@@ -16,21 +16,21 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
 ----------------------------------------------------------------------
-A TOTAL OF 39 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
+A TOTAL OF 38 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 7.07 secs; Memory: 39.5Mb
+Time: 7.22 secs; Memory: 33.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W....W............W.E.................................  60 / 222 (27%)
-E.....E...E..........................................W...... 120 / 222 (54%)
-..E.....E........W.........E...........EEEW.........WE..E... 180 / 222 (81%)
-.........E..W..E.....E.E..................
+......W............W.E.................................E....  60 / 218 (28%)
+.E...E..........................................W........E.. 120 / 218 (55%)
+...E........W.........E...........EEEW.........WE..E........ 180 / 218 (83%)
+.....E..W..E.....E.E..................
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -39,15 +39,6 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
  28 | WARNING | Possible useless method overriding detected
     |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
-----------------------------------------------------------------------
-
-
-FILE: ....1/extensions/SemanticMediaWiki/src/Cache/FixedInMemoryCache.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 81 | WARNING | The method parameter $ttl is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -79,7 +70,7 @@ FILE: ....1/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 46 | ERROR | Visibility must be declared on method "__construct"
+ 45 | ERROR | Visibility must be declared on method "__construct"
     |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -179,7 +170,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
   63 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 169 | WARNING | The method parameter $orderByProperty is never used
+ 199 | WARNING | The method parameter $orderByProperty is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -279,8 +270,8 @@ FOUND 3 ERRORS AFFECTING 3 LINES
      |       | characters (Generic.Files.LineLength.MaxExceeded)
  356 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 446 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 447 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
-Time: 7.16 secs; Memory: 39.5Mb
+Time: 7.19 secs; Memory: 33.5Mb
