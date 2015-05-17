@@ -7,7 +7,7 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               92
 [ ] Generic.Metrics.NestingLevel.MaxExceeded                     54
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           42
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           39
 [ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             39
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    31
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                25
@@ -25,19 +25,19 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 ----------------------------------------------------------------------
-A TOTAL OF 380 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
+A TOTAL OF 377 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (33 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 10.26 secs; Memory: 29.25Mb
+Time: 10.18 secs; Memory: 29.25Mb
 
 ############################################################################
 
 vendor/bin/phpcs includes/* --standard=phpcs.xml --extensions=php -sp
 
 E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE........E.........EEEEEE..E  60 / 156 (38%)
-..E.E.E....E......W...W.EEEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWW 120 / 156 (77%)
+..E.E.E....E......W.....EEEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWW 120 / 156 (77%)
 WE.EEEEWEW.EE...EEEEEEEEEEEEEEEEEE..
 
 
@@ -604,20 +604,20 @@ FOUND 8 ERRORS AFFECTING 7 LINES
   25 | ERROR | [ ] Each class must be in a namespace of at least one
      |       |     level (a top-level vendor name)
      |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 131 | ERROR | [ ] Function's nesting level (6) exceeds allowed maximum
+ 133 | ERROR | [ ] Function's nesting level (6) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 131 | ERROR | [ ] Function's cyclomatic complexity (24) exceeds allowed
+ 133 | ERROR | [ ] Function's cyclomatic complexity (24) exceeds allowed
      |       |     maximum of 10
      |       |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 352 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
+ 356 | ERROR | [ ] Line exceeds maximum limit of 180 characters; contains
      |       |     183 characters (Generic.Files.LineLength.MaxExceeded)
- 489 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
+ 493 | ERROR | [ ] Function's nesting level (4) exceeds allowed maximum
      |       |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 508 | ERROR | [x] Must use "self::" for local static member
+ 512 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 522 | ERROR | [x] Must use "self::" for local static member
+ 526 | ERROR | [x] Must use "self::" for local static member
      |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 585 | ERROR | [ ] Empty CATCH statement detected
+ 589 | ERROR | [ ] Empty CATCH statement detected
      |       |     (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
@@ -662,32 +662,32 @@ FILE: ....1/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
 ----------------------------------------------------------------------
 FOUND 11 ERRORS AFFECTING 9 LINES
 ----------------------------------------------------------------------
-  19 | ERROR | Each class must be in a namespace of at least one level (a
+  18 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 154 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 153 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 154 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 153 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 256 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 255 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 256 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
+ 255 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 370 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 369 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 415 | ERROR | Empty ELSE statement detected
+ 414 | ERROR | Empty ELSE statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
- 427 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+ 426 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 456 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+ 455 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 532 | ERROR | Line exceeds maximum limit of 180 characters; contains 258
+ 531 | ERROR | Line exceeds maximum limit of 180 characters; contains 258
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 545 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 544 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -795,22 +795,9 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...icMediaWiki/includes/parserhooks/DocumentationParserFunction.php
 ----------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 59 | WARNING | The method parameter $type is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 90 | WARNING | The method parameter $type is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
-FILE: ...ns/SemanticMediaWiki/includes/parserhooks/InfoParserFunction.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
-----------------------------------------------------------------------
- 80 | WARNING | The method parameter $type is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 92 | WARNING | The method parameter $type is never used
+ 37 | WARNING | The method parameter $parser is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -984,7 +971,7 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
  48 | ERROR | Function's nesting level (6) exceeds allowed maximum of
     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 48 | ERROR | Function's cyclomatic complexity (16) exceeds allowed
+ 48 | ERROR | Function's cyclomatic complexity (15) exceeds allowed
     |       | maximum of 10
     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1130,7 +1117,7 @@ FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 75 | ERROR | Line exceeds maximum limit of 180 characters; contains 218
+ 77 | ERROR | Line exceeds maximum limit of 180 characters; contains 218
     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1590,34 +1577,34 @@ FILE: ...ns/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php
 ----------------------------------------------------------------------
 FOUND 10 ERRORS AND 1 WARNING AFFECTING 9 LINES
 ----------------------------------------------------------------------
-  52 | ERROR   | [ ] Each class must be in a namespace of at least one
+  45 | ERROR   | [ ] Each class must be in a namespace of at least one
      |         |     level (a top-level vendor name)
      |         |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 159 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
+ 152 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 491 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
+ 484 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 539 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 532 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 539 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
+ 532 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 687 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 680 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 687 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
+ 680 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 718 | ERROR   | [x] Must use "self::" for local static member
+ 711 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 721 | ERROR   | [x] Must use "self::" for local static member
+ 714 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 726 | ERROR   | [x] Must use "self::" for local static member
+ 719 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 781 | WARNING | [ ] Possible useless method overriding detected
+ 774 | WARNING | [ ] Possible useless method overriding detected
      |         |     (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
@@ -1651,14 +1638,14 @@ FOUND 5 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
      |         | (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
  334 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 334 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+ 334 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 675 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 685 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 930 | WARNING | The method parameter $oldtitle is never used
+ 940 | WARNING | The method parameter $oldtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 930 | WARNING | The method parameter $newtitle is never used
+ 940 | WARNING | The method parameter $newtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -1694,4 +1681,4 @@ FOUND 7 ERRORS AND 1 WARNING AFFECTING 6 LINES
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 10.31 secs; Memory: 29.25Mb
+Time: 10.24 secs; Memory: 29.25Mb
