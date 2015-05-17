@@ -7,7 +7,7 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               113
 [ ] Generic.Metrics.NestingLevel.MaxExceeded                     65
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           60
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           56
 [ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             44
 [ ] Squiz.Scope.MethodScope.Missing                              39
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    37
@@ -29,12 +29,12 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH          1
 ----------------------------------------------------------------------
-A TOTAL OF 510 SNIFF VIOLATIONS WERE FOUND IN 23 SOURCES
+A TOTAL OF 506 SNIFF VIOLATIONS WERE FOUND IN 23 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (39 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 36.77 secs; Memory: 48.5Mb
+Time: 36.78 secs; Memory: 50Mb
 
 ############################################################################
 
