@@ -6,9 +6,9 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] PSR1.Classes.ClassDeclaration.MissingNamespace               92
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     54
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           39
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             39
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     53
+[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           40
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             38
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    31
 [ ] PSR1.Classes.ClassDeclaration.MultipleClasses                25
 [ ] Squiz.Scope.MethodScope.Missing                              24
@@ -16,7 +16,7 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.Files.LineLength.MaxExceeded                         16
 [ ] Squiz.Functions.GlobalFunction.Found                         11
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedCATCH            6
-[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               6
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               5
 [ ] PSR1.Files.SideEffects.FoundWithSymbols                      4
 [ ] Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps 3
 [x] PSR2.Namespaces.UseDeclaration.MultipleDeclarations          2
@@ -25,12 +25,12 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
 ----------------------------------------------------------------------
-A TOTAL OF 377 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
+A TOTAL OF 375 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SOURCES AUTOMATICALLY (33 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 10.18 secs; Memory: 29.25Mb
+Time: 10.08 secs; Memory: 29.5Mb
 
 ############################################################################
 
