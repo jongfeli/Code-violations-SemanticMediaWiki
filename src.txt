@@ -6,31 +6,31 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
     SOURCE                                                       COUNT
 ----------------------------------------------------------------------
 [ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           14
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     7
+[ ] Generic.Metrics.NestingLevel.MaxExceeded                     8
 [ ] Squiz.Scope.MethodScope.Missing                              5
+[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             4
 [ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             3
+[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               2
 [ ] Generic.Files.LineLength.MaxExceeded                         2
 [x] Squiz.Classes.SelfMemberReference.NotUsed                    1
 [ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
 [ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
-[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               1
 ----------------------------------------------------------------------
-A TOTAL OF 38 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
+A TOTAL OF 41 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
 ----------------------------------------------------------------------
 
-Time: 7.22 secs; Memory: 33.5Mb
+Time: 7.31 secs; Memory: 33.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W............W.E.................................E....  60 / 218 (28%)
-.E...E..........................................W........E.. 120 / 218 (55%)
-...E........W.........E...........EEEW.........WE..E........ 180 / 218 (83%)
-.....E..W..E.....E.E..................
+......W............W.E.................................E....  60 / 220 (27%)
+.E...E..........................................W........E.. 120 / 220 (55%)
+...E........W.........E...........EEEW.........WE..E........ 180 / 220 (82%)
+.....E..W..E.....E.E................E...
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -274,4 +274,18 @@ FOUND 3 ERRORS AFFECTING 3 LINES
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
-Time: 7.19 secs; Memory: 33.5Mb
+
+FILE: ...ons/SemanticMediaWiki/src/SQLStore/ByIdDataRebuildDispatcher.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 208 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 208 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 239 | ERROR | Empty IF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
+----------------------------------------------------------------------
+
+Time: 7.36 secs; Memory: 33.5Mb
