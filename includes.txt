@@ -1271,7 +1271,7 @@ FILE: ...ensions/SemanticMediaWiki/includes/specials/SMW_SpecialTypes.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 18 | ERROR | Each class must be in a namespace of at least one level (a
+ 19 | ERROR | Each class must be in a namespace of at least one level (a
     |       | top-level vendor name)
     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
@@ -1514,32 +1514,25 @@ FILE: ...MediaWiki/includes/storage/SQLStore/SMW_Sql3StubSemanticData.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
-  17 | ERROR | Each class must be in a namespace of at least one level (a
+  18 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 117 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 138 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 138 | ERROR | Empty CATCH statement detected
+ 159 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 277 | ERROR | Empty CATCH statement detected
+ 298 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
 ----------------------------------------------------------------------
 
 
 FILE: ...iaWiki/includes/storage/SQLStore/SMW_SQLStore3_SetupHandlers.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
+FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
-  23 | ERROR | Each class must be in a namespace of at least one level (a
-     |       | top-level vendor name)
-     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 320 | ERROR | Function's nesting level (4) exceeds allowed maximum of
-     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 320 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
-     |       | maximum of 10
-     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 370 | ERROR | Empty IF statement detected
-     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
+ 23 | ERROR | Each class must be in a namespace of at least one level (a
+    |       | top-level vendor name)
+    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -1575,7 +1568,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...ns/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php
 ----------------------------------------------------------------------
-FOUND 10 ERRORS AND 1 WARNING AFFECTING 9 LINES
+FOUND 10 ERRORS AND 2 WARNINGS AFFECTING 10 LINES
 ----------------------------------------------------------------------
   45 | ERROR   | [ ] Each class must be in a namespace of at least one
      |         |     level (a top-level vendor name)
@@ -1583,28 +1576,30 @@ FOUND 10 ERRORS AND 1 WARNING AFFECTING 9 LINES
  152 | ERROR   | [ ] Function's cyclomatic complexity (14) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 484 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
+ 392 | WARNING | [ ] The method parameter $id is never used
+     |         |     (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 491 | ERROR   | [ ] Function's nesting level (5) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 532 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 539 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 532 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
+ 539 | ERROR   | [ ] Function's cyclomatic complexity (17) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 680 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
+ 687 | ERROR   | [ ] Function's nesting level (4) exceeds allowed maximum
      |         |     of 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 680 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
+ 687 | ERROR   | [ ] Function's cyclomatic complexity (11) exceeds
      |         |     allowed maximum of 10
      |         |     (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 711 | ERROR   | [x] Must use "self::" for local static member
+ 718 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 714 | ERROR   | [x] Must use "self::" for local static member
+ 721 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 719 | ERROR   | [x] Must use "self::" for local static member
+ 726 | ERROR   | [x] Must use "self::" for local static member
      |         |     reference
      |         |     (Squiz.Classes.SelfMemberReference.NotUsed)
- 774 | WARNING | [ ] Possible useless method overriding detected
+ 781 | WARNING | [ ] Possible useless method overriding detected
      |         |     (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
@@ -1615,12 +1610,12 @@ FILE: ...ticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3_Writers.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  24 | ERROR | Each class must be in a namespace of at least one level (a
+  26 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 948 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 720 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 948 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
+ 720 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1633,19 +1628,19 @@ FOUND 5 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
   52 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  60 | ERROR   | Class constants must be uppercase; expected TABLENAME
+  66 | ERROR   | Class constants must be uppercase; expected TABLENAME
      |         | but found tableName
      |         | (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
- 334 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 340 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 334 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
+ 340 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 685 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 690 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 940 | WARNING | The method parameter $oldtitle is never used
+ 945 | WARNING | The method parameter $oldtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 940 | WARNING | The method parameter $newtitle is never used
+ 945 | WARNING | The method parameter $newtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -1681,4 +1676,4 @@ FOUND 7 ERRORS AND 1 WARNING AFFECTING 6 LINES
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 10.24 secs; Memory: 29.25Mb
+Time: 10.12 secs; Memory: 29.25Mb
