@@ -3,23 +3,20 @@ vendor/bin/phpcs languages/* --standard=phpcs.xml --extensions=php -s --report=s
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
-    SOURCE                                                       COUNT
+SOURCE                                                           COUNT
 ----------------------------------------------------------------------
-[ ] PSR1.Classes.ClassDeclaration.MissingNamespace               21
-[ ] PSR1.Files.SideEffects.FoundWithSymbols                      21
-[ ] Squiz.Scope.MethodScope.Missing                              11
-[ ] Generic.Files.LineLength.MaxExceeded                         7
-[x] Squiz.Classes.SelfMemberReference.NotUsed                    6
-[ ] Squiz.Classes.ValidClassName.NotCamelCaps                    3
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           1
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     1
+PSR1.Classes.ClassDeclaration.MissingNamespace                   21
+PSR1.Files.SideEffects.FoundWithSymbols                          21
+Squiz.Scope.MethodScope.Missing                                  11
+Generic.Files.LineLength.MaxExceeded                             7
+Squiz.Classes.ValidClassName.NotCamelCaps                        3
+Generic.CodeAnalysis.UnusedFunctionParameter.Found               1
+Generic.Metrics.NestingLevel.MaxExceeded                         1
 ----------------------------------------------------------------------
-A TOTAL OF 71 SNIFF VIOLATIONS WERE FOUND IN 8 SOURCES
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (6 VIOLATIONS IN TOTAL)
+A TOTAL OF 65 SNIFF VIOLATIONS WERE FOUND IN 7 SOURCES
 ----------------------------------------------------------------------
 
-Time: 821ms; Memory: 15.75Mb
+Time: 809ms; Memory: 15.75Mb
 
 ######################################################################################
 
@@ -268,49 +265,34 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 
 FILE: ...i-1.24.1/extensions/SemanticMediaWiki/languages/SMW_Language.php
 ----------------------------------------------------------------------
-FOUND 18 ERRORS AFFECTING 18 LINES
+FOUND 12 ERRORS AFFECTING 12 LINES
 ----------------------------------------------------------------------
-  20 | ERROR | [ ] Each class must be in a namespace of at least one
-     |       |     level (a top-level vendor name)
-     |       |     (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 111 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getNamespaces" (Squiz.Scope.MethodScope.Missing)
- 124 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getNamespaceAliases"
-     |       |     (Squiz.Scope.MethodScope.Missing)
- 129 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 149 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getDatatypeLabels" (Squiz.Scope.MethodScope.Missing)
- 153 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getCanonicalDatatypeLabels"
-     |       |     (Squiz.Scope.MethodScope.Missing)
- 154 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 161 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getDatatypeAliases" (Squiz.Scope.MethodScope.Missing)
- 163 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 170 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getPropertyLabels" (Squiz.Scope.MethodScope.Missing)
- 177 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getPropertyAliases" (Squiz.Scope.MethodScope.Missing)
- 179 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 188 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getPropertyId" (Squiz.Scope.MethodScope.Missing)
- 195 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 196 | ERROR | [x] Must use "self::" for local static member
-     |       |     reference (Squiz.Classes.SelfMemberReference.NotUsed)
- 204 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getDateFormats" (Squiz.Scope.MethodScope.Missing)
- 213 | ERROR | [ ] Visibility must be declared on method "findMonth"
-     |       |     (Squiz.Scope.MethodScope.Missing)
- 228 | ERROR | [ ] Visibility must be declared on method
-     |       |     "getMonthLabel" (Squiz.Scope.MethodScope.Missing)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+  20 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 111 | ERROR | Visibility must be declared on method "getNamespaces"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 124 | ERROR | Visibility must be declared on method
+     |       | "getNamespaceAliases" (Squiz.Scope.MethodScope.Missing)
+ 149 | ERROR | Visibility must be declared on method
+     |       | "getDatatypeLabels" (Squiz.Scope.MethodScope.Missing)
+ 153 | ERROR | Visibility must be declared on method
+     |       | "getCanonicalDatatypeLabels"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 161 | ERROR | Visibility must be declared on method
+     |       | "getDatatypeAliases" (Squiz.Scope.MethodScope.Missing)
+ 170 | ERROR | Visibility must be declared on method
+     |       | "getPropertyLabels" (Squiz.Scope.MethodScope.Missing)
+ 177 | ERROR | Visibility must be declared on method
+     |       | "getPropertyAliases" (Squiz.Scope.MethodScope.Missing)
+ 188 | ERROR | Visibility must be declared on method "getPropertyId"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 204 | ERROR | Visibility must be declared on method "getDateFormats"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 213 | ERROR | Visibility must be declared on method "findMonth"
+     |       | (Squiz.Scope.MethodScope.Missing)
+ 228 | ERROR | Visibility must be declared on method "getMonthLabel"
+     |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
 
@@ -432,4 +414,4 @@ FOUND 1 ERROR AND 2 WARNINGS AFFECTING 2 LINES
     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
-Time: 837ms; Memory: 15.75Mb
+Time: 842ms; Memory: 15.75Mb
