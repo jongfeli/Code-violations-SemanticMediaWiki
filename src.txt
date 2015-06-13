@@ -3,34 +3,32 @@ vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -s --report=source
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
-    SOURCE                                                       COUNT
+SOURCE                                                           COUNT
 ----------------------------------------------------------------------
-[ ] Generic.CodeAnalysis.UnusedFunctionParameter.Found           14
-[ ] Generic.Metrics.NestingLevel.MaxExceeded                     8
-[ ] Squiz.Scope.MethodScope.Missing                              5
-[ ] Generic.Metrics.CyclomaticComplexity.MaxExceeded             4
-[ ] Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF           3
-[ ] Generic.CodeAnalysis.EmptyStatement.DetectedIF               2
-[ ] Generic.Files.LineLength.MaxExceeded                         2
-[x] Squiz.Classes.SelfMemberReference.NotUsed                    1
-[ ] Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed  1
-[ ] Generic.CodeAnalysis.UselessOverridingMethod.Found           1
+Generic.CodeAnalysis.UnusedFunctionParameter.Found               14
+Generic.Metrics.NestingLevel.MaxExceeded                         8
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 5
+Squiz.Scope.MethodScope.Missing                                  5
+Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF               3
+Generic.CodeAnalysis.EmptyStatement.DetectedIF                   2
+Generic.Files.LineLength.MaxExceeded                             2
+Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed      1
+Generic.CodeAnalysis.UselessOverridingMethod.Found               1
+Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 1
 ----------------------------------------------------------------------
-A TOTAL OF 41 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SOURCES AUTOMATICALLY (1 VIOLATIONS IN TOTAL)
+A TOTAL OF 42 SNIFF VIOLATIONS WERE FOUND IN 10 SOURCES
 ----------------------------------------------------------------------
 
-Time: 7.31 secs; Memory: 33.5Mb
+Time: 7.36 secs; Memory: 33.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs src/* --standard=phpcs.xml --extensions=php -sp
 
-......W............W.E.................................E....  60 / 220 (27%)
-.E...E..........................................W........E.. 120 / 220 (55%)
-...E........W.........E...........EEEW.........WE..E........ 180 / 220 (82%)
-.....E..W..E.....E.E................E...
+......W............W.E.................................E....  60 / 221 (27%)
+.E...E.............................E............W........E.. 120 / 221 (54%)
+...E........W.........E...........EEEW.........WE..E........ 180 / 221 (81%)
+.....E..W..E.......E.................E...
 
 
 FILE: ...emanticMediaWiki/src/Annotator/TypeByImportPropertyAnnotator.php
@@ -97,6 +95,15 @@ FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
+FILE: ...ions/SemanticMediaWiki/src/MediaWiki/Hooks/TitleMoveComplete.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 82 | ERROR | Empty ELSE statement detected
+    |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
+----------------------------------------------------------------------
+
+
 FILE: ...ki/src/MediaWiki/Specials/SearchByProperty/QueryResultLookup.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -147,8 +154,11 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...c/SPARQLStore/QueryEngine/Interpreter/DisjunctionInterpreter.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
+ 134 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  156 | ERROR | Empty IF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
@@ -227,7 +237,7 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
  131 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 131 | ERROR | Function's cyclomatic complexity (26) exceeds allowed
+ 131 | ERROR | Function's cyclomatic complexity (22) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -248,17 +258,6 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
  227 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
-----------------------------------------------------------------------
-
-
-FILE: ...ions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegment.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 67 | ERROR | [x] Must use "self::" for local static member reference
-    |       |     (Squiz.Classes.SelfMemberReference.NotUsed)
-----------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -288,4 +287,4 @@ FOUND 3 ERRORS AFFECTING 2 LINES
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
 
-Time: 7.36 secs; Memory: 33.5Mb
+Time: 7.44 secs; Memory: 33.5Mb
