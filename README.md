@@ -4,6 +4,10 @@
 
 [syncing-a-fork](https://help.github.com/articles/syncing-a-fork/)
 
+```
+git clone -b Code-violations https://github.com/jongfeli/SemanticMediaWiki.git
+```
+
 ```php
   if ( some condition ) {
     doSomeStuff
