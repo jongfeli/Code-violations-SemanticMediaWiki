@@ -1,9 +1,0 @@
-
-vendor/bin/phpcs resources/* --standard=phpcs.xml --extensions=php -s --report=source
-
-PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
--------------------------------------------------------------------------
-    SOURCE                                                          COUNT
--------------------------------------------------------------------------
--------------------------------------------------------------------------
-
