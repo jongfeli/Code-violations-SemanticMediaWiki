@@ -1,5 +1,5 @@
 
-vendor/bin/phpcs tests/* src/* resources/* maintenance/* languages/* includes/* --standard=phpcs.xml --extensions=php -s --report=source
+vendor/bin/phpcs docs/* i18n/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
@@ -35,7 +35,7 @@ Time: 39.29 secs; Memory: 52.5Mb
 
 ############################################################################
 
-vendor/bin/phpcs tests/* src/* resources/* maintenance/* languages/* includes/* --standard=phpcs.xml --extensions=php -sp
+vendor/bin/phpcs docs/* i18n/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
 ......................................................E.....  60 / 846 (7%)
 W..W........................................................ 120 / 846 (14%)
