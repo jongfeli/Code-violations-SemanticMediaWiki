@@ -5,13 +5,13 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 SOURCE                                                           COUNT
 ----------------------------------------------------------------------
-PSR1.Classes.ClassDeclaration.MissingNamespace                   114
+PSR1.Classes.ClassDeclaration.MissingNamespace                   112
 Generic.Metrics.NestingLevel.MaxExceeded                         66
 Generic.CodeAnalysis.UnusedFunctionParameter.Found               59
 Generic.Metrics.CyclomaticComplexity.MaxExceeded                 44
 Squiz.Scope.MethodScope.Missing                                  40
-PSR1.Files.SideEffects.FoundWithSymbols                          34
-Generic.Files.LineLength.MaxExceeded                             31
+Generic.Files.LineLength.MaxExceeded                             37
+PSR1.Files.SideEffects.FoundWithSymbols                          33
 PSR1.Classes.ClassDeclaration.MultipleClasses                    25
 Generic.Files.OneClassPerFile.MultipleFound                      21
 Squiz.Functions.GlobalFunction.Found                             11
@@ -27,55 +27,33 @@ Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
 Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed      1
 Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
 ----------------------------------------------------------------------
-A TOTAL OF 482 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
+A TOTAL OF 485 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
 ----------------------------------------------------------------------
 
-Time: 39.56 secs; Memory: 49.5Mb
+Time: 38.21 secs; Memory: 49.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
-EW.WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..E  60 / 846 (7%)
-EE....E.....W....EEEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEE 120 / 846 (14%)
-WEW.EE..EEEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEE.EEWWWWW. 180 / 846 (21%)
-...............W.E...........W....................E......E.. 240 / 846 (28%)
-E..............................E...........W...W....E....E.. 300 / 846 (35%)
-..W........E........W..........E................E.EEW....... 360 / 846 (43%)
-.WE..E.............WE.E......EE.....E..E..........EE........ 420 / 846 (50%)
-.................................................E.....W..W. 480 / 846 (57%)
-............................E....E................W..E...... 540 / 846 (64%)
-........................W................................... 600 / 846 (71%)
-.............................E.............................. 660 / 846 (78%)
-............................................................ 720 / 846 (85%)
-...................................................W........ 780 / 846 (92%)
-............................................................ 840 / 846 (99%)
-.....W
+WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 844 (7%)
+...E.....W....EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW. 120 / 844 (14%)
+EE..EEEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEE.EEWWWWW..... 180 / 844 (21%)
+..........W.EE...........W.....................E......E..E.. 240 / 844 (28%)
+............................E...........WW.......E....E....W 300 / 844 (36%)
+........E........W...........E................E.EEW........W 360 / 844 (43%)
+E..E..........E....WE.E......E....E..E..........EE.......... 420 / 844 (50%)
+...............................................E.....W..W... 480 / 844 (57%)
+..........................E....E................W..E........ 540 / 844 (64%)
+......................W..................................... 600 / 844 (71%)
+...........................E................................ 660 / 844 (78%)
+............................................................ 720 / 844 (85%)
+...................................................W........ 780 / 844 (92%)
+............................................................ 840 / 844 (100%)
+...W
 
 
-FILE: ...-1.24.1/extensions/SemanticMediaWiki/SemanticMediaWiki.hooks.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 15 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...iawiki-1.24.1/extensions/SemanticMediaWiki/SemanticMediaWiki.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 1 | WARNING | A file should declare new symbols (classes, functions,
-   |         | constants, etc.) and cause no other side effects, or it should
-   |         | execute logic with side effects, but should not do both. The
-   |         | first symbol is defined on line 27 and the first side effect
-   |         | is on line 19. (PSR1.Files.SideEffects.FoundWithSymbols)
-----------------------------------------------------------------------
-
-
-FILE: ...iawiki-1.24.1/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
+FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -86,7 +64,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ml/mediawiki-1.24.1/extensions/SemanticMediaWiki/docs/INSTALL.md
+FILE: .../www/html/mediawiki/extensions/SemanticMediaWiki/docs/INSTALL.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -97,7 +75,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...tml/mediawiki-1.24.1/extensions/SemanticMediaWiki/docs/README.md
+FILE: ...r/www/html/mediawiki/extensions/SemanticMediaWiki/docs/README.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -108,7 +86,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...iawiki-1.24.1/extensions/SemanticMediaWiki/docs/RELEASE-NOTES.md
+FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/RELEASE-NOTES.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -119,7 +97,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...diawiki-1.24.1/extensions/SemanticMediaWiki/includes/Aliases.php
+FILE: ...html/mediawiki/extensions/SemanticMediaWiki/includes/Aliases.php
 ----------------------------------------------------------------------
 FOUND 57 ERRORS AND 1 WARNING AFFECTING 21 LINES
 ----------------------------------------------------------------------
@@ -316,7 +294,7 @@ FOUND 4 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1/extensions/SemanticMediaWiki/includes/dataitems/SMW_DI_URI.php
+FILE: ...i/extensions/SemanticMediaWiki/includes/dataitems/SMW_DI_URI.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -621,12 +599,12 @@ FILE: ...tensions/SemanticMediaWiki/includes/datavalues/SMW_DataValue.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  40 | ERROR | Each class must be in a namespace of at least one level (a
+  41 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 610 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 611 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 809 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 810 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -686,14 +664,14 @@ FOUND 5 ERRORS AFFECTING 4 LINES
   18 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 111 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 113 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 111 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
+ 113 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 232 | ERROR | Empty ELSE statement detected
+ 234 | ERROR | Empty ELSE statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
- 236 | ERROR | Empty IF statement detected
+ 238 | ERROR | Empty IF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
 ----------------------------------------------------------------------
 
@@ -702,53 +680,55 @@ FILE: ...ions/SemanticMediaWiki/includes/export/SMW_Serializer_Turtle.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  18 | ERROR | Each class must be in a namespace of at least one level (a
+  20 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 131 | ERROR | Function's nesting level (6) exceeds allowed maximum of
+ 145 | ERROR | Function's nesting level (6) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 131 | ERROR | Function's cyclomatic complexity (16) exceeds allowed
+ 145 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
-FILE: ....1/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
+FILE: ...ki/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
 ----------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 9 LINES
+FOUND 12 ERRORS AFFECTING 10 LINES
 ----------------------------------------------------------------------
   18 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 153 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 161 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 153 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 161 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 255 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 265 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 255 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
+ 265 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 369 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 384 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 414 | ERROR | Empty ELSE statement detected
+ 429 | ERROR | Empty ELSE statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
- 426 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+ 441 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 455 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+ 470 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 531 | ERROR | Line exceeds maximum limit of 180 characters; contains 258
+ 546 | ERROR | Line exceeds maximum limit of 180 characters; contains 281
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 544 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 566 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 670 | ERROR | Line exceeds maximum limit of 180 characters; contains 187
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
 
-FILE: ....1/extensions/SemanticMediaWiki/includes/export/SMW_Exp_Data.php
+FILE: ...ki/extensions/SemanticMediaWiki/includes/export/SMW_Exp_Data.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -760,7 +740,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/GlobalFunctions.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/GlobalFunctions.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 11 WARNINGS AFFECTING 11 LINES
 ----------------------------------------------------------------------
@@ -799,7 +779,7 @@ FOUND 3 ERRORS AND 11 WARNINGS AFFECTING 11 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...iki-1.24.1/extensions/SemanticMediaWiki/includes/Highlighter.php
+FILE: .../mediawiki/extensions/SemanticMediaWiki/includes/Highlighter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -866,16 +846,6 @@ FOUND 7 ERRORS AFFECTING 5 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...xtensions/SemanticMediaWiki/includes/query/SMW_QueryLanguage.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 18 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
 FILE: ...tensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
@@ -890,14 +860,14 @@ FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  304 | ERROR   | Empty IF statement detected
      |         | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
- 424 | WARNING | The method parameter $outputMode is never used
+ 425 | WARNING | The method parameter $outputMode is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 453 | WARNING | The method parameter $outputMode is never used
+ 454 | WARNING | The method parameter $outputMode is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/query/SMW_Query.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/query/SMW_Query.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -907,7 +877,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...1/extensions/SemanticMediaWiki/includes/querypages/QueryPage.php
+FILE: ...i/extensions/SemanticMediaWiki/includes/querypages/QueryPage.php
 ----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 5 LINES
 ----------------------------------------------------------------------
@@ -1123,7 +1093,7 @@ FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/RecurringEvents.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/RecurringEvents.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1135,7 +1105,7 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/includes/Setup.php
+FILE: ...w/html/mediawiki/extensions/SemanticMediaWiki/includes/Setup.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1144,7 +1114,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ki-1.24.1/extensions/SemanticMediaWiki/includes/SMW_Infolink.php
+FILE: ...mediawiki/extensions/SemanticMediaWiki/includes/SMW_Infolink.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -1160,7 +1130,7 @@ FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...iki-1.24.1/extensions/SemanticMediaWiki/includes/SMW_Outputs.php
+FILE: .../mediawiki/extensions/SemanticMediaWiki/includes/SMW_Outputs.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1170,7 +1140,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...-1.24.1/extensions/SemanticMediaWiki/includes/SMW_PageLister.php
+FILE: ...diawiki/extensions/SemanticMediaWiki/includes/SMW_PageLister.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1182,7 +1152,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/includes/SMW_PageSchemas.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/SMW_PageSchemas.php
 ----------------------------------------------------------------------
 FOUND 6 ERRORS AFFECTING 6 LINES
 ----------------------------------------------------------------------
@@ -1222,7 +1192,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
   21 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 154 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 156 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1555,17 +1525,17 @@ FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
   46 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 175 | ERROR   | Function's cyclomatic complexity (14) exceeds allowed
+ 176 | ERROR   | Function's cyclomatic complexity (14) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 419 | WARNING | The method parameter $id is never used
+ 435 | WARNING | The method parameter $id is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 574 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 590 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 574 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+ 590 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 669 | WARNING | Possible useless method overriding detected
+ 685 | WARNING | Possible useless method overriding detected
      |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 
@@ -1577,9 +1547,9 @@ FOUND 3 ERRORS AFFECTING 2 LINES
   28 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 772 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 780 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 772 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
+ 780 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1595,16 +1565,16 @@ FOUND 5 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
   66 | ERROR   | Class constants must be uppercase; expected TABLENAME
      |         | but found tableName
      |         | (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
- 339 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 338 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 339 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
+ 338 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 694 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 730 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 963 | WARNING | The method parameter $oldtitle is never used
+ 999 | WARNING | The method parameter $oldtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 963 | WARNING | The method parameter $newtitle is never used
+ 999 | WARNING | The method parameter $newtitle is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -1629,7 +1599,7 @@ FOUND 4 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageAr.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageAr.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -1649,7 +1619,7 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ....24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageArz.php
+FILE: ...awiki/extensions/SemanticMediaWiki/languages/SMW_LanguageArz.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -1669,7 +1639,7 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageCa.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageCa.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1703,7 +1673,7 @@ FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageDe.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageDe.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1719,7 +1689,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageEn.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageEn.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1735,7 +1705,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageEs.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageEs.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1751,7 +1721,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageFi.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageFi.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1767,7 +1737,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageFr.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageFr.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1783,7 +1753,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageHe.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageHe.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -1803,7 +1773,7 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageId.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageId.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1819,7 +1789,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageIt.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageIt.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1835,7 +1805,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageNb.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageNb.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1851,7 +1821,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageNl.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageNl.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1867,7 +1837,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.24.1/extensions/SemanticMediaWiki/languages/SMW_Language.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/languages/SMW_Language.php
 ----------------------------------------------------------------------
 FOUND 12 ERRORS AFFECTING 12 LINES
 ----------------------------------------------------------------------
@@ -1900,7 +1870,7 @@ FOUND 12 ERRORS AFFECTING 12 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguagePl.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguagePl.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1916,7 +1886,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguagePt.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguagePt.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1932,7 +1902,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageRu.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageRu.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
 ----------------------------------------------------------------------
@@ -1950,7 +1920,7 @@ FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.24.1/extensions/SemanticMediaWiki/languages/SMW_LanguageSk.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/languages/SMW_LanguageSk.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1966,7 +1936,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...4.1/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_cn.php
+FILE: ...iki/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_cn.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1984,7 +1954,7 @@ FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...4.1/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_tw.php
+FILE: ...iki/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_tw.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -2002,7 +1972,7 @@ FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.24.1/extensions/SemanticMediaWiki/languages/SMW_Messages.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/languages/SMW_Messages.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -2019,7 +1989,7 @@ FOUND 1 ERROR AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...wiki-1.24.1/extensions/SemanticMediaWiki/maintenance/dumpRDF.php
+FILE: ...l/mediawiki/extensions/SemanticMediaWiki/maintenance/dumpRDF.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -2035,7 +2005,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...mediawiki-1.24.1/extensions/SemanticMediaWiki/maintenance/README
+FILE: ...w/html/mediawiki/extensions/SemanticMediaWiki/maintenance/README
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2058,7 +2028,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...-1.24.1/extensions/SemanticMediaWiki/maintenance/rebuildData.php
+FILE: ...diawiki/extensions/SemanticMediaWiki/maintenance/rebuildData.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2082,7 +2052,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.24.1/extensions/SemanticMediaWiki/maintenance/setupStore.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/maintenance/setupStore.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2094,7 +2064,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...24.1/extensions/SemanticMediaWiki/src/DataValues/ImportValue.php
+FILE: ...wiki/extensions/SemanticMediaWiki/src/DataValues/ImportValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -2109,6 +2079,15 @@ FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
+FILE: ...ensions/SemanticMediaWiki/src/DeferredRequestDispatchManager.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 183 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...SemanticMediaWiki/src/Deserializers/SemanticDataDeserializer.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -2118,16 +2097,16 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ticMediaWiki/src/Exporter/CachedDataItemToExpResourceEncoder.php
+FILE: .../SemanticMediaWiki/src/Exporter/DataItemToExpResourceEncoder.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 222 | WARNING | The method parameter $modifier is never used
+ 240 | WARNING | The method parameter $modifier is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ....1/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
+FILE: ...ki/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2145,7 +2124,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.24.1/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
@@ -2167,6 +2146,15 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...Wiki/src/MediaWiki/Specials/SpecialDeferredRequestDispatcher.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 75 | WARNING | The method parameter $query is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
 FILE: ...ki/src/MediaWiki/Specials/SearchByProperty/QueryResultLookup.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -2176,16 +2164,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...icMediaWiki/src/MediaWiki/Specials/SpecialAsyncJobDispatcher.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 75 | WARNING | The method parameter $query is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
-FILE: ...wiki-1.24.1/extensions/SemanticMediaWiki/src/NumberFormatter.php
+FILE: ...l/mediawiki/extensions/SemanticMediaWiki/src/NumberFormatter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2194,7 +2173,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ....1/extensions/SemanticMediaWiki/src/ParserParameterProcessor.php
+FILE: ...ki/extensions/SemanticMediaWiki/src/ParserParameterProcessor.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2215,7 +2194,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.24.1/extensions/SemanticMediaWiki/src/Query/PrintRequest.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/src/Query/PrintRequest.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2324,6 +2303,18 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...MediaWiki/src/SQLStore/QueryEngine/QuerySegmentListProcessor.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 123 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 123 | ERROR | Function's cyclomatic complexity (22) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...SQLStore/QueryEngine/Interpreter/ThingDescriptionInterpreter.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -2353,28 +2344,24 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...sions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 4 LINES
+FOUND 8 ERRORS AFFECTING 8 LINES
 ----------------------------------------------------------------------
-  91 | ERROR | Line exceeds maximum limit of 180 characters; contains 195
+  91 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
      |       | characters (Generic.Files.LineLength.MaxExceeded)
  181 | ERROR | Line exceeds maximum limit of 180 characters; contains 285
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 368 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
+ 286 | ERROR | Line exceeds maximum limit of 180 characters; contains 220
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 457 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 297 | ERROR | Line exceeds maximum limit of 180 characters; contains 194
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 308 | ERROR | Line exceeds maximum limit of 180 characters; contains 192
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 322 | ERROR | Line exceeds maximum limit of 180 characters; contains 186
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 415 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 504 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...iaWiki/src/SQLStore/QueryEngine/QuerySegmentListItemResolver.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
-----------------------------------------------------------------------
- 131 | ERROR | Function's nesting level (5) exceeds allowed maximum of
-     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 131 | ERROR | Function's cyclomatic complexity (22) exceeds allowed
-     |       | maximum of 10
-     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -2529,7 +2516,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ml/mediawiki-1.24.1/extensions/SemanticMediaWiki/tests/README.md
+FILE: .../www/html/mediawiki/extensions/SemanticMediaWiki/tests/README.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2539,4 +2526,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 41.92 secs; Memory: 49.5Mb
+Time: 39.03 secs; Memory: 49.5Mb
