@@ -6,9 +6,9 @@ PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 SOURCE                                                           COUNT
 ----------------------------------------------------------------------
 PSR1.Classes.ClassDeclaration.MissingNamespace                   112
-Generic.Metrics.NestingLevel.MaxExceeded                         66
+Generic.Metrics.NestingLevel.MaxExceeded                         65
 Generic.CodeAnalysis.UnusedFunctionParameter.Found               59
-Generic.Metrics.CyclomaticComplexity.MaxExceeded                 44
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 43
 Squiz.Scope.MethodScope.Missing                                  40
 Generic.Files.LineLength.MaxExceeded                             37
 PSR1.Files.SideEffects.FoundWithSymbols                          33
@@ -27,30 +27,30 @@ Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
 Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed      1
 Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
 ----------------------------------------------------------------------
-A TOTAL OF 485 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
+A TOTAL OF 483 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
 ----------------------------------------------------------------------
 
-Time: 38.21 secs; Memory: 49.5Mb
+Time: 39.43 secs; Memory: 49.5Mb
 
 ############################################################################
 
 vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
-WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 844 (7%)
-...E.....W....EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW. 120 / 844 (14%)
-EE..EEEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEE.EEWWWWW..... 180 / 844 (21%)
-..........W.EE...........W.....................E......E..E.. 240 / 844 (28%)
-............................E...........WW.......E....E....W 300 / 844 (36%)
-........E........W...........E................E.EEW........W 360 / 844 (43%)
-E..E..........E....WE.E......E....E..E..........EE.......... 420 / 844 (50%)
-...............................................E.....W..W... 480 / 844 (57%)
-..........................E....E................W..E........ 540 / 844 (64%)
-......................W..................................... 600 / 844 (71%)
-...........................E................................ 660 / 844 (78%)
-............................................................ 720 / 844 (85%)
-...................................................W........ 780 / 844 (92%)
-............................................................ 840 / 844 (100%)
-...W
+WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 855 (7%)
+...E.....W....EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW. 120 / 855 (14%)
+EE..EEEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEE.EEWWWWW..... 180 / 855 (21%)
+..........W.EE.................W.....................E...... 240 / 855 (28%)
+E..E..............................E...........WW.......E.... 300 / 855 (35%)
+E....W........E........W...........E................E.EEW... 360 / 855 (42%)
+.....WE..E..........E....WE.E......E....E..E..........EE.... 420 / 855 (49%)
+.....................................................E.....W 480 / 855 (56%)
+..W.............................E....E................W..E.. 540 / 855 (63%)
+............................W............................... 600 / 855 (70%)
+.................................E.......................... 660 / 855 (77%)
+............................................................ 720 / 855 (84%)
+............................................................ 780 / 855 (91%)
+..W......................................................... 840 / 855 (98%)
+..............W
 
 
 FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
@@ -580,17 +580,12 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...tensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Record.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
   29 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  38 | ERROR | Function's nesting level (4) exceeds allowed maximum of
-     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  38 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
-     |       | maximum of 10
-     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 290 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 261 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -599,12 +594,12 @@ FILE: ...tensions/SemanticMediaWiki/includes/datavalues/SMW_DataValue.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  41 | ERROR | Each class must be in a namespace of at least one level (a
+  42 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 611 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 589 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 810 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 788 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -997,7 +992,7 @@ FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  307 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 225 characters (Generic.Files.LineLength.MaxExceeded)
- 474 | WARNING | The method parameter $context is never used
+ 476 | WARNING | The method parameter $context is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -1593,7 +1588,7 @@ FOUND 4 ERRORS AND 1 WARNING AFFECTING 4 LINES
  175 | ERROR   | Function's cyclomatic complexity (14) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 404 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+ 409 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -2526,4 +2521,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 39.03 secs; Memory: 49.5Mb
+Time: 39.52 secs; Memory: 49.75Mb
