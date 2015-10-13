@@ -20,17 +20,14 @@ Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                6
 Internal.NoCodeFound                                             6
 Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF               4
 Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps     3
-Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 3
 Squiz.Classes.ValidClassName.NotCamelCaps                        3
-Generic.CodeAnalysis.UselessOverridingMethod.Found               2
-Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase1
-Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed      1
-Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
+Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 2
+Generic.CodeAnalysis.UselessOverridingMethod.Found               1
 ----------------------------------------------------------------------
-A TOTAL OF 483 SNIFF VIOLATIONS WERE FOUND IN 21 SOURCES
+A TOTAL OF 478 SNIFF VIOLATIONS WERE FOUND IN 18 SOURCES
 ----------------------------------------------------------------------
 
-Time: 39.43 secs; Memory: 49.5Mb
+Time: 38.94 secs; Memory: 49.5Mb
 
 ############################################################################
 
@@ -41,10 +38,10 @@ WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 855 (7%)
 EE..EEEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEE.EEWWWWW..... 180 / 855 (21%)
 ..........W.EE.................W.....................E...... 240 / 855 (28%)
 E..E..............................E...........WW.......E.... 300 / 855 (35%)
-E....W........E........W...........E................E.EEW... 360 / 855 (42%)
+E.............E........W...........E................E.EEW... 360 / 855 (42%)
 .....WE..E..........E....WE.E......E....E..E..........EE.... 420 / 855 (49%)
 .....................................................E.....W 480 / 855 (56%)
-..W.............................E....E................W..E.. 540 / 855 (63%)
+..W..................................E................W..E.. 540 / 855 (63%)
 ............................W............................... 600 / 855 (70%)
 .................................E.......................... 660 / 855 (77%)
 ............................................................ 720 / 855 (84%)
@@ -688,26 +685,24 @@ FOUND 3 ERRORS AFFECTING 2 LINES
 
 FILE: ...ki/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
 ----------------------------------------------------------------------
-FOUND 12 ERRORS AFFECTING 10 LINES
+FOUND 11 ERRORS AFFECTING 9 LINES
 ----------------------------------------------------------------------
-  18 | ERROR | Each class must be in a namespace of at least one level (a
+  19 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 161 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 162 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 161 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 162 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 265 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 266 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 265 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
+ 266 | ERROR | Function's cyclomatic complexity (19) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 384 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 385 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 429 | ERROR | Empty ELSE statement detected
-     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSE)
- 441 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
+ 440 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  470 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
@@ -1552,14 +1547,11 @@ FOUND 3 ERRORS AFFECTING 2 LINES
 
 FILE: ...s/SemanticMediaWiki/includes/storage/SQLStore/SMW_Sql3SmwIds.php
 ----------------------------------------------------------------------
-FOUND 5 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
+FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
   52 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  66 | ERROR   | Class constants must be uppercase; expected TABLENAME
-     |         | but found tableName
-     |         | (Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase)
  338 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
  338 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
@@ -2180,15 +2172,6 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...diaWiki/src/PropertyAnnotator/MandatoryTypePropertyAnnotator.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 26 | WARNING | Possible useless method overriding detected
-    |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
-----------------------------------------------------------------------
-
-
 FILE: ...ediawiki/extensions/SemanticMediaWiki/src/Query/PrintRequest.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
@@ -2263,19 +2246,17 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: ...anticMediaWiki/src/SPARQLStore/QueryEngine/XmlResponseParser.php
 ----------------------------------------------------------------------
-FOUND 0 ERRORS AND 6 WARNINGS AFFECTING 5 LINES
+FOUND 0 ERRORS AND 5 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
  145 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
  155 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 172 | WARNING | Avoid function calls in a FOR loop test part
-     |         | (Generic.CodeAnalysis.ForLoopWithTestFunctionCall.NotAllowed)
- 195 | WARNING | The method parameter $parser is never used
+ 189 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 195 | WARNING | The method parameter $elementTag is never used
+ 189 | WARNING | The method parameter $elementTag is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 202 | WARNING | The method parameter $parser is never used
+ 196 | WARNING | The method parameter $parser is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2439,15 +2420,6 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...anticMediaWiki/tests/phpunit/includes/dataitems/DataItemTest.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 53 | ERROR | Empty FOREACH statement detected
-    |       | (Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH)
-----------------------------------------------------------------------
-
-
 FILE: ...manticMediaWiki/tests/phpunit/includes/specials/SpecialsTest.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -2521,4 +2493,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 39.52 secs; Memory: 49.75Mb
+Time: 39.5 secs; Memory: 49.75Mb
