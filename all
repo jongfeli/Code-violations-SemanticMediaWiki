@@ -8,10 +8,10 @@ SOURCE                                                           COUNT
 PSR1.Classes.ClassDeclaration.MissingNamespace                   111
 Generic.Metrics.NestingLevel.MaxExceeded                         65
 Generic.CodeAnalysis.UnusedFunctionParameter.Found               59
-Generic.Metrics.CyclomaticComplexity.MaxExceeded                 42
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 41
+Generic.Files.LineLength.MaxExceeded                             40
 Squiz.Scope.MethodScope.Missing                                  40
-Generic.Files.LineLength.MaxExceeded                             38
-PSR1.Files.SideEffects.FoundWithSymbols                          34
+PSR1.Files.SideEffects.FoundWithSymbols                          35
 PSR1.Classes.ClassDeclaration.MultipleClasses                    25
 Generic.Files.OneClassPerFile.MultipleFound                      21
 Squiz.Functions.GlobalFunction.Found                             11
@@ -24,30 +24,30 @@ Squiz.Classes.ValidClassName.NotCamelCaps                        3
 Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 2
 Generic.CodeAnalysis.UselessOverridingMethod.Found               1
 ----------------------------------------------------------------------
-A TOTAL OF 478 SNIFF VIOLATIONS WERE FOUND IN 18 SOURCES
+A TOTAL OF 480 SNIFF VIOLATIONS WERE FOUND IN 18 SOURCES
 ----------------------------------------------------------------------
 
-Time: 41.98 secs; Memory: 50.25Mb
+Time: 40.85 secs; Memory: 51Mb
 
 ############################################################################
 
 vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
-WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 870 (7%)
-...E........EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW.E. 120 / 870 (14%)
-.EEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEEE.EEWWWWW........ 180 / 870 (21%)
-.......W.EE.................W.....................E........E 240 / 870 (28%)
-..E..............................E...........WW........E.... 300 / 870 (34%)
-.W.E.............E........W............E................E.EE 360 / 870 (41%)
-W........WE..E..........E....WE.E......E....E..E..........EE 420 / 870 (48%)
-..........................................................E. 480 / 870 (55%)
-....W..W..................................E................W 540 / 870 (62%)
-..E..............................W.......................... 600 / 870 (69%)
-........................................E................... 660 / 870 (76%)
-............................................................ 720 / 870 (83%)
-............................................................ 780 / 870 (90%)
-...............W............................................ 840 / 870 (97%)
-.............................W
+WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 878 (7%)
+...E........EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW.E. 120 / 878 (14%)
+.EEEEEEEEEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEEE.EEWWWWW........ 180 / 878 (21%)
+.......W.EE..................W.....................E........ 240 / 878 (27%)
+E..E....................E.........E...........WW........E... 300 / 878 (34%)
+..W.E.............E........W..............E................E 360 / 878 (41%)
+.EEW........WE..E........E.E....WE.E......E....E..E......... 420 / 878 (48%)
+.EE......................................................... 480 / 878 (55%)
+.E.....W..W..................................E.............. 540 / 878 (62%)
+..W..E..............................W....................... 600 / 878 (68%)
+............................................E............... 660 / 878 (75%)
+............................................................ 720 / 878 (82%)
+............................................................ 780 / 878 (89%)
+......................W.........W........................... 840 / 878 (96%)
+.....................................W
 
 
 FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
@@ -344,7 +344,7 @@ FILE: ...ensions/SemanticMediaWiki/includes/dataitems/SMW_DI_Property.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 271 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 285 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -412,7 +412,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
   34 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 263 | ERROR | Line exceeds maximum limit of 180 characters; contains 191
+ 307 | ERROR | Line exceeds maximum limit of 180 characters; contains 191
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -451,9 +451,9 @@ FOUND 3 ERRORS AFFECTING 2 LINES
   17 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 144 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 150 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 144 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 150 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -496,11 +496,11 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
   39 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 155 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 173 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 195 | WARNING | The method parameter $linked is never used
+ 215 | WARNING | The method parameter $linked is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 327 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 356 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 220 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -581,10 +581,10 @@ FILE: ...tensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Record.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  29 | ERROR | Each class must be in a namespace of at least one level (a
+  30 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 261 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 269 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -596,9 +596,9 @@ FOUND 3 ERRORS AFFECTING 3 LINES
   42 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 589 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 590 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 788 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 789 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -806,14 +806,14 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: .../extensions/SemanticMediaWiki/includes/query/SMW_QueryParser.php
 ----------------------------------------------------------------------
-FOUND 7 ERRORS AFFECTING 5 LINES
+FOUND 6 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
-  20 | ERROR | Each class must be in a namespace of at least one level (a
+  21 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 133 | ERROR | Function's nesting level (6) exceeds allowed maximum of
+ 139 | ERROR | Function's nesting level (6) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 133 | ERROR | Function's cyclomatic complexity (24) exceeds allowed
+ 139 | ERROR | Function's cyclomatic complexity (24) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  285 | ERROR | Empty IF statement detected
@@ -821,9 +821,6 @@ FOUND 7 ERRORS AFFECTING 5 LINES
  311 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
  311 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
-     |       | maximum of 10
-     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 610 | ERROR | Function's cyclomatic complexity (13) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1329,12 +1326,12 @@ FILE: ...xtensions/SemanticMediaWiki/includes/storage/SMW_ResultArray.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  14 | ERROR | Each class must be in a namespace of at least one level (a
+  16 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 196 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 206 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 196 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
+ 206 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1572,9 +1569,9 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
  25 | ERROR   | Each class must be in a namespace of at least one level
     |         | (a top-level vendor name)
     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 95 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-    |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
  97 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+    |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
+ 99 | ERROR   | Line exceeds maximum limit of 180 characters; contains
     |         | 210 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1592,9 +1589,9 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
  25 | ERROR   | Each class must be in a namespace of at least one level
     |         | (a top-level vendor name)
     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 95 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-    |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
  97 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+    |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
+ 99 | ERROR   | Line exceeds maximum limit of 180 characters; contains
     |         | 210 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1726,9 +1723,9 @@ FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
   26 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  98 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 199 characters (Generic.Files.LineLength.MaxExceeded)
  100 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+     |         | 199 characters (Generic.Files.LineLength.MaxExceeded)
+ 102 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 204 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1820,28 +1817,28 @@ FOUND 12 ERRORS AFFECTING 12 LINES
   20 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 111 | ERROR | Visibility must be declared on method "getNamespaces"
+ 113 | ERROR | Visibility must be declared on method "getNamespaces"
      |       | (Squiz.Scope.MethodScope.Missing)
- 124 | ERROR | Visibility must be declared on method
+ 126 | ERROR | Visibility must be declared on method
      |       | "getNamespaceAliases" (Squiz.Scope.MethodScope.Missing)
- 149 | ERROR | Visibility must be declared on method
+ 151 | ERROR | Visibility must be declared on method
      |       | "getDatatypeLabels" (Squiz.Scope.MethodScope.Missing)
- 153 | ERROR | Visibility must be declared on method
+ 155 | ERROR | Visibility must be declared on method
      |       | "getCanonicalDatatypeLabels"
      |       | (Squiz.Scope.MethodScope.Missing)
- 161 | ERROR | Visibility must be declared on method
+ 163 | ERROR | Visibility must be declared on method
      |       | "getDatatypeAliases" (Squiz.Scope.MethodScope.Missing)
- 170 | ERROR | Visibility must be declared on method
+ 172 | ERROR | Visibility must be declared on method
      |       | "getPropertyLabels" (Squiz.Scope.MethodScope.Missing)
- 177 | ERROR | Visibility must be declared on method
+ 179 | ERROR | Visibility must be declared on method
      |       | "getPropertyAliases" (Squiz.Scope.MethodScope.Missing)
- 188 | ERROR | Visibility must be declared on method "getPropertyId"
+ 190 | ERROR | Visibility must be declared on method "getPropertyId"
      |       | (Squiz.Scope.MethodScope.Missing)
- 204 | ERROR | Visibility must be declared on method "getDateFormats"
+ 206 | ERROR | Visibility must be declared on method "getDateFormats"
      |       | (Squiz.Scope.MethodScope.Missing)
- 213 | ERROR | Visibility must be declared on method "findMonth"
+ 215 | ERROR | Visibility must be declared on method "findMonth"
      |       | (Squiz.Scope.MethodScope.Missing)
- 228 | ERROR | Visibility must be declared on method "getMonthLabel"
+ 230 | ERROR | Visibility must be declared on method "getMonthLabel"
      |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -1891,7 +1888,7 @@ FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
   26 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 100 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 102 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 219 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2059,7 +2056,7 @@ FILE: ...ensions/SemanticMediaWiki/src/DeferredRequestDispatchManager.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 183 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
+ 184 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2077,7 +2074,7 @@ FILE: .../SemanticMediaWiki/src/Exporter/DataItemToExpResourceEncoder.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 240 | WARNING | The method parameter $modifier is never used
+ 257 | WARNING | The method parameter $modifier is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2110,6 +2107,15 @@ FOUND 3 ERRORS AFFECTING 3 LINES
      |       | (Squiz.Scope.MethodScope.Missing)
  333 | ERROR | Visibility must be declared on method "update"
      |       | (Squiz.Scope.MethodScope.Missing)
+----------------------------------------------------------------------
+
+
+FILE: ...xtensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 505 | ERROR | Line exceeds maximum limit of 180 characters; contains 196
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -2279,6 +2285,15 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...nticMediaWiki/src/SQLStore/EmbeddedQueryDependencyLinksStore.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 416 | ERROR | Line exceeds maximum limit of 180 characters; contains 182
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...MediaWiki/src/SQLStore/QueryEngine/QuerySegmentListProcessor.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
@@ -2354,7 +2369,7 @@ FILE: ...ticMediaWiki/src/SQLStore/CompositePropertyTableDiffIterator.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 74 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 83 | ERROR | Function's nesting level (4) exceeds allowed maximum of
     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2399,7 +2414,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | constants, etc.) and cause no other side effects, or it should
    |         | execute logic with side effects, but should not do both. The
    |         | first symbol is defined on line 16 and the first side effect
-   |         | is on line 118. (PSR1.Files.SideEffects.FoundWithSymbols)
+   |         | is on line 121. (PSR1.Files.SideEffects.FoundWithSymbols)
 ----------------------------------------------------------------------
 
 
@@ -2478,6 +2493,18 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...tests/phpunit/Integration/ByJsonScript/readmeContentsBuilder.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 14 and the first side effect
+   |         | is on line 88. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+
 FILE: .../www/html/mediawiki/extensions/SemanticMediaWiki/tests/README.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -2488,4 +2515,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 41.01 secs; Memory: 50.5Mb
+Time: 41.21 secs; Memory: 51.25Mb
