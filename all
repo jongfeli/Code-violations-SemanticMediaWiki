@@ -20,6 +20,8 @@ vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/*
 
  php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Functions.FunctionCallArgumentSpacing
  
+  php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.PHP.LowerCaseKeyword.Found
+  
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 SOURCE                                                           COUNT
