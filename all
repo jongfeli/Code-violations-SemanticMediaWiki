@@ -34,7 +34,7 @@ Time: 40.85 secs; Memory: 51Mb
 
 ############################################################################
 
-vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
+php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
 WWWW.E.EE.EE.EEEEEEEE.EEEEEEEEEEEEEEEE..........EEEEEE..EEE.  60 / 878 (7%)
 ...E........EEEEEEEW.EE.EWEEEE..EWE..E.EEEEEEWWWE.EEEEWEW.E. 120 / 878 (14%)
