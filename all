@@ -4,51 +4,34 @@ php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* -
 
 vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.LanguageConstructSpacing
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Files.EndFileNewline
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.PHP.ForbiddenFunctions
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Functions.OpeningFunctionBraceKernighanRitchie
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Formatting.DisallowMultipleStatements
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.WhiteSpace.DisallowSpaceIndent
-
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Functions.FunctionCallArgumentSpacing
- 
- php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.PHP.LowerCaseKeyword
-  
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 SOURCE                                                           COUNT
 ----------------------------------------------------------------------
 PSR1.Classes.ClassDeclaration.MissingNamespace                   111
-Generic.Metrics.NestingLevel.MaxExceeded                         65
-Generic.CodeAnalysis.UnusedFunctionParameter.Found               59
-Generic.Metrics.CyclomaticComplexity.MaxExceeded                 41
-Generic.Files.LineLength.MaxExceeded                             40
-Squiz.Scope.MethodScope.Missing                                  40
-PSR1.Files.SideEffects.FoundWithSymbols                          35
-PSR1.Classes.ClassDeclaration.MultipleClasses                    25
+Generic.CodeAnalysis.UnusedFunctionParameter.Found               78
+Generic.Metrics.NestingLevel.MaxExceeded                         58
+Generic.Files.LineLength.MaxExceeded                             47
+Squiz.Scope.MethodScope.Missing                                  45
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 42
+PSR1.Files.SideEffects.FoundWithSymbols                          34
+PSR1.Classes.ClassDeclaration.MultipleClasses                    22
 Generic.Files.OneClassPerFile.MultipleFound                      21
-Squiz.Functions.GlobalFunction.Found                             11
-Generic.CodeAnalysis.EmptyStatement.DetectedIF                   7
-Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                6
+Squiz.Functions.GlobalFunction.Found                             12
+Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                7
+Generic.CodeAnalysis.EmptyStatement.DetectedIF                   6
 Internal.NoCodeFound                                             6
-Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF               4
+Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF               5
+Generic.CodeAnalysis.UselessOverridingMethod.Found               4
 Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps     3
 Squiz.Classes.ValidClassName.NotCamelCaps                        3
 Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 2
-Generic.CodeAnalysis.UselessOverridingMethod.Found               1
+Generic.PHP.NoSilencedErrors.Discouraged                         2
 ----------------------------------------------------------------------
-A TOTAL OF 480 SNIFF VIOLATIONS WERE FOUND IN 18 SOURCES
+A TOTAL OF 508 SNIFF VIOLATIONS WERE FOUND IN 19 SOURCES
 ----------------------------------------------------------------------
 
-Time: 40.85 secs; Memory: 51Mb
+Time: 15.59 secs; Memory: 90Mb
 
 ############################################################################
 
