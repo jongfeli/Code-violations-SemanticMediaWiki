@@ -1,8 +1,8 @@
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 
-php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
-vendor/bin/phpcs docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
+vendor/bin/phpcs docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
