@@ -22,6 +22,7 @@ php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=ph
 
 php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Classes.SelfMemberReference
 
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
 
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
