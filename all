@@ -2,7 +2,27 @@ curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 
 php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
 
-vendor/bin/phpcs docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
+
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Classes.SelfMemberReference
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SemicolonSpacing
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Functions.FunctionCallArgumentSpacing
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.ScopeClosingBrace
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.LanguageConstructSpacing
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Arrays.ArrayBracketSpacing
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.WhiteSpace.DisallowSpaceIndent
+
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Classes.SelfMemberReference
+
+
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
