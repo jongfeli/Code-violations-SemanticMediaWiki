@@ -24,63 +24,62 @@ php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=ph
 
 php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
 
-
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 SOURCE                                                           COUNT
 ----------------------------------------------------------------------
-PSR1.Classes.ClassDeclaration.MissingNamespace                   109
-Generic.CodeAnalysis.UnusedFunctionParameter.Found               104
-Generic.Metrics.NestingLevel.MaxExceeded                         55
-Generic.Files.LineLength.MaxExceeded                             51
-Squiz.Scope.MethodScope.Missing                                  47
-Generic.Metrics.CyclomaticComplexity.MaxExceeded                 43
-PSR1.Files.SideEffects.FoundWithSymbols                          34
+Generic.CodeAnalysis.UnusedFunctionParameter.Found               107
+PSR1.Classes.ClassDeclaration.MissingNamespace                   76
+Generic.Metrics.NestingLevel.MaxExceeded                         54
+Generic.Metrics.CyclomaticComplexity.MaxExceeded                 41
+Generic.Files.LineLength.MaxExceeded                             36
+Squiz.Scope.MethodScope.Missing                                  33
 PSR1.Classes.ClassDeclaration.MultipleClasses                    25
 Generic.Files.OneClassPerFile.MultipleFound                      24
+PSR1.Files.SideEffects.FoundWithSymbols                          13
 Squiz.Functions.GlobalFunction.Found                             12
-Generic.CodeAnalysis.UselessOverridingMethod.Found               9
-Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                7
-Generic.CodeAnalysis.EmptyStatement.DetectedIF                   7
+Generic.CodeAnalysis.UselessOverridingMethod.Found               10
+Generic.CodeAnalysis.EmptyStatement.DetectedCATCH                8
+Generic.CodeAnalysis.EmptyStatement.DetectedIF                   8
 Internal.NoCodeFound                                             6
 Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF               5
 Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps     3
-Squiz.Classes.ValidClassName.NotCamelCaps                        3
 Generic.CodeAnalysis.EmptyStatement.DetectedELSE                 2
 Generic.PHP.NoSilencedErrors.Discouraged                         2
-Generic.Classes.DuplicateClassName.Found                         1
+Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH              1
+Squiz.Scope.StaticThisUsage.Found                                1
 ----------------------------------------------------------------------
-A TOTAL OF 549 SNIFF VIOLATIONS WERE FOUND IN 20 SOURCES
+A TOTAL OF 467 SNIFF VIOLATIONS WERE FOUND IN 20 SOURCES
 ----------------------------------------------------------------------
 
-Time: 17.15 secs; Memory: 84Mb
+Time: 17.3 secs; Memory: 100Mb
 
 ############################################################################
 
-php phpcs.phar docs/* includes/* languages/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp
 
-WWWW..EE.EE.EEEEEEEE.EEEEEEEEEEEEEE.........EEEEEEE.EE...E..   60 / 1082 (6%)
-......EEEEEEE.W.EE.EWEEEE..EWE..EEEEEEWWWE.EEEEWEW.E..EEEEEE  120 / 1082 (11%)
-EEEEEEEEEE....EEEEEEEEEEEEEEEEEEEEEEE.EWWWWWW...............  180 / 1082 (17%)
-W.....WEWW..E.W.W.W..WWW....W.W..WWE.WWW..E.E...............  240 / 1082 (22%)
-.......W.......W.W....E...E......E...............E........E.  300 / 1082 (28%)
-.E....................E.W.......E...........EWW.E...W.....W.  360 / 1082 (33%)
-.....W.E.E.............E..EW..........W...............W.....  420 / 1082 (39%)
-E.................E.EEW........WE..E.................E...E..  480 / 1082 (44%)
-.WE.E.......E...EE.E.E...E.WE............E.E................  540 / 1082 (50%)
-............................................E.....W..W......  600 / 1082 (55%)
-...........................E......W..........E..............  660 / 1082 (61%)
-...........E..W.............................................  720 / 1082 (67%)
-.....................................E........W..E....E.....  780 / 1082 (72%)
-..........................................E.................  840 / 1082 (78%)
-............................................................  900 / 1082 (83%)
-............................................................  960 / 1082 (89%)
-........................................W.............W..... 1020 / 1082 (94%)
-........E...............................................W... 1080 / 1082 (100%)
-.W
+WWWW..EE.EE.EEEEEEEE.EEEEEEEEEEEEEE.........EEEEEEE.EE.E....   60 / 1102 (5%)
+..EEEEEEE.W.EE.EWEEEE..EWE..EEEEEEWWWE.EEEEWEW.E..EEEEEE..EW  120 / 1102 (11%)
+WWWWW...............W.....WEWW..E.W.WW.W..WWW.....W.W..WWE.W  180 / 1102 (16%)
+WW..E.E.........................W.......W.W......E....EE....  240 / 1102 (22%)
+...EE................E........E..E....................E.W...  300 / 1102 (27%)
+....E...........EWW.E...W....E..........WW...E.............E  360 / 1102 (33%)
+..EW.............W..............W.....E.............E.EEW...  420 / 1102 (38%)
+.....WE..E......................E...E...WE.E.......E.....WW.  480 / 1102 (44%)
+E.E..E...............E..E.........E....E....................  540 / 1102 (49%)
+........................................E.E...W..W..........  600 / 1102 (54%)
+.....................E......W..........E....................  660 / 1102 (60%)
+..E..W......................................................  720 / 1102 (65%)
+................W........E........W........E................  780 / 1102 (71%)
+......................................E.....................  840 / 1102 (76%)
+............................................................  900 / 1102 (82%)
+................W...........................................  960 / 1102 (87%)
+.............E...........................................W.. 1020 / 1102 (93%)
+...........WW.........W.............E....................... 1080 / 1102 (98%)
+................W....W
 
 
-FILE: ...iawiki-1.25.6/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
+FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/COMPATIBILITY.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -91,7 +90,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ml/mediawiki-1.25.6/extensions/SemanticMediaWiki/docs/INSTALL.md
+FILE: .../www/html/mediawiki/extensions/SemanticMediaWiki/docs/INSTALL.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -102,7 +101,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...tml/mediawiki-1.25.6/extensions/SemanticMediaWiki/docs/README.md
+FILE: ...r/www/html/mediawiki/extensions/SemanticMediaWiki/docs/README.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -113,7 +112,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...iawiki-1.25.6/extensions/SemanticMediaWiki/docs/RELEASE-NOTES.md
+FILE: ...tml/mediawiki/extensions/SemanticMediaWiki/docs/RELEASE-NOTES.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -138,7 +137,7 @@ FILE: ...ons/SemanticMediaWiki/includes/articlepages/SMW_PropertyPage.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 19 | ERROR | Each class must be in a namespace of at least one level (a
+ 22 | ERROR | Each class must be in a namespace of at least one level (a
     |       | top-level vendor name)
     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
@@ -176,7 +175,7 @@ FOUND 5 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...6/extensions/SemanticMediaWiki/includes/dataitems/SMW_DI_URI.php
+FILE: ...i/extensions/SemanticMediaWiki/includes/dataitems/SMW_DI_URI.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -227,7 +226,7 @@ FILE: ...ensions/SemanticMediaWiki/includes/dataitems/SMW_DI_Property.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 312 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 337 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -256,7 +255,7 @@ FILE: .../extensions/SemanticMediaWiki/includes/dataitems/SMW_DI_Time.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 29 | ERROR | Each class must be in a namespace of at least one level (a
+ 30 | ERROR | Each class must be in a namespace of at least one level (a
     |       | top-level vendor name)
     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
@@ -292,44 +291,42 @@ FILE: ...nsions/SemanticMediaWiki/includes/datavalues/SMW_DV_Property.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  33 | ERROR   | Each class must be in a namespace of at least one level
+  34 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  63 | WARNING | Possible useless method overriding detected
+  84 | WARNING | Possible useless method overriding detected
      |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
- 329 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 386 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 191 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
 
 FILE: ...extensions/SemanticMediaWiki/includes/datavalues/SMW_DV_Time.php
 ----------------------------------------------------------------------
-FOUND 9 ERRORS AND 1 WARNING AFFECTING 9 LINES
+FOUND 9 ERRORS AFFECTING 8 LINES
 ----------------------------------------------------------------------
-  99 | ERROR   | Each class must be in a namespace of at least one level
-     |         | (a top-level vendor name)
-     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 108 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 260 characters (Generic.Files.LineLength.MaxExceeded)
- 138 | ERROR   | Function's nesting level (5) exceeds allowed maximum of
-     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 138 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 200 | ERROR   | Function's cyclomatic complexity (20) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 238 | ERROR   | Empty ELSEIF statement detected
-     |         | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
- 266 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 184 characters (Generic.Files.LineLength.MaxExceeded)
- 309 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
-     |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 415 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 499 | WARNING | The method parameter $timezone is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 101 | ERROR | Each class must be in a namespace of at least one level (a
+     |       | top-level vendor name)
+     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
+ 110 | ERROR | Line exceeds maximum limit of 180 characters; contains 260
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 119 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 119 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 180 | ERROR | Function's cyclomatic complexity (22) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 229 | ERROR | Empty ELSEIF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
+ 260 | ERROR | Line exceeds maximum limit of 180 characters; contains 184
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 308 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
+ 411 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
@@ -372,7 +369,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
   33 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 645 | WARNING | The method parameter $ignoredParameter is never used
+ 655 | WARNING | The method parameter $ignoredParameter is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -521,7 +518,7 @@ FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ....6/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
+FILE: ...ki/extensions/SemanticMediaWiki/includes/export/SMW_Exporter.php
 ----------------------------------------------------------------------
 FOUND 8 ERRORS AFFECTING 7 LINES
 ----------------------------------------------------------------------
@@ -549,7 +546,7 @@ FOUND 8 ERRORS AFFECTING 7 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ....6/extensions/SemanticMediaWiki/includes/export/SMW_Exp_Data.php
+FILE: ...ki/extensions/SemanticMediaWiki/includes/export/SMW_Exp_Data.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -561,7 +558,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.25.6/extensions/SemanticMediaWiki/includes/ExternalHooks.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/includes/ExternalHooks.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -571,20 +568,20 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...iki-1.25.6/extensions/SemanticMediaWiki/includes/Highlighter.php
+FILE: .../mediawiki/extensions/SemanticMediaWiki/includes/Highlighter.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
  122 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 205 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
+ 206 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
-FILE: ...wiki-1.25.6/extensions/SemanticMediaWiki/includes/IdeAliases.php
+FILE: ...l/mediawiki/extensions/SemanticMediaWiki/includes/IdeAliases.php
 ----------------------------------------------------------------------
 FOUND 57 ERRORS AND 1 WARNING AFFECTING 21 LINES
 ----------------------------------------------------------------------
@@ -765,34 +762,34 @@ FILE: ...tensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
 ----------------------------------------------------------------------
-  24 | ERROR   | Each class must be in a namespace of at least one level
+  26 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 284 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 232 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 284 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
+ 232 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 314 | ERROR   | Empty IF statement detected
+ 262 | ERROR   | Empty IF statement detected
      |         | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
- 371 | WARNING | The method parameter $outputMode is never used
+ 319 | WARNING | The method parameter $outputMode is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 400 | WARNING | The method parameter $outputMode is never used
+ 348 | WARNING | The method parameter $outputMode is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...1.25.6/extensions/SemanticMediaWiki/includes/query/SMW_Query.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/query/SMW_Query.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 33 | ERROR | Each class must be in a namespace of at least one level (a
+ 36 | ERROR | Each class must be in a namespace of at least one level (a
     |       | top-level vendor name)
     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
-FILE: ...6/extensions/SemanticMediaWiki/includes/querypages/QueryPage.php
+FILE: ...i/extensions/SemanticMediaWiki/includes/querypages/QueryPage.php
 ----------------------------------------------------------------------
 FOUND 5 ERRORS AFFECTING 5 LINES
 ----------------------------------------------------------------------
@@ -834,15 +831,15 @@ FILE: ...ns/SemanticMediaWiki/includes/querypages/PropertiesQueryPage.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AND 1 WARNING AFFECTING 4 LINES
 ----------------------------------------------------------------------
-  64 | ERROR   | Visibility must be declared on method
+  65 | ERROR   | Visibility must be declared on method
      |         | "getPageHeader" (Squiz.Scope.MethodScope.Missing)
-  81 | ERROR   | Visibility must be declared on method "getName"
+  82 | ERROR   | Visibility must be declared on method "getName"
      |         | (Squiz.Scope.MethodScope.Missing)
-  96 | WARNING | The method parameter $skin is never used
+  97 | WARNING | The method parameter $skin is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-  96 | ERROR   | Visibility must be declared on method "formatResult"
+  97 | ERROR   | Visibility must be declared on method "formatResult"
      |         | (Squiz.Scope.MethodScope.Missing)
- 264 | ERROR   | Visibility must be declared on method "getResults"
+ 268 | ERROR   | Visibility must be declared on method "getResults"
      |         | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -997,26 +994,26 @@ FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
     |         | constants, etc.) and cause no other side effects, or it
     |         | should execute logic with side effects, but should not do
     |         | both. The first symbol is defined on line 27 and the first
-    |         | side effect is on line 139.
+    |         | side effect is on line 149.
     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
  61 | WARNING | The method parameter $queryResult is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...1.25.6/extensions/SemanticMediaWiki/includes/RecurringEvents.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/RecurringEvents.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 137 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+ 161 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 137 | ERROR | Function's cyclomatic complexity (39) exceeds allowed
+ 161 | ERROR | Function's cyclomatic complexity (39) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
 
 
-FILE: ...mediawiki-1.25.6/extensions/SemanticMediaWiki/includes/Setup.php
+FILE: ...w/html/mediawiki/extensions/SemanticMediaWiki/includes/Setup.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1025,7 +1022,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ki-1.25.6/extensions/SemanticMediaWiki/includes/SMW_Infolink.php
+FILE: ...mediawiki/extensions/SemanticMediaWiki/includes/SMW_Infolink.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
@@ -1039,7 +1036,7 @@ FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...iki-1.25.6/extensions/SemanticMediaWiki/includes/SMW_Outputs.php
+FILE: .../mediawiki/extensions/SemanticMediaWiki/includes/SMW_Outputs.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1049,7 +1046,7 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...-1.25.6/extensions/SemanticMediaWiki/includes/SMW_PageLister.php
+FILE: ...diawiki/extensions/SemanticMediaWiki/includes/SMW_PageLister.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1061,7 +1058,7 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...1.25.6/extensions/SemanticMediaWiki/includes/SMW_PageSchemas.php
+FILE: ...iawiki/extensions/SemanticMediaWiki/includes/SMW_PageSchemas.php
 ----------------------------------------------------------------------
 FOUND 6 ERRORS AFFECTING 6 LINES
 ----------------------------------------------------------------------
@@ -1152,27 +1149,27 @@ FOUND 11 ERRORS AFFECTING 9 LINES
   24 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  83 | ERROR | Function's nesting level (5) exceeds allowed maximum of
+  92 | ERROR | Function's nesting level (5) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  83 | ERROR | Function's cyclomatic complexity (24) exceeds allowed
+  92 | ERROR | Function's cyclomatic complexity (24) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 210 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 219 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 210 | ERROR | Function's cyclomatic complexity (23) exceeds allowed
+ 219 | ERROR | Function's cyclomatic complexity (23) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 414 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
+ 423 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 416 | ERROR | Line exceeds maximum limit of 180 characters; contains 191
+ 425 | ERROR | Line exceeds maximum limit of 180 characters; contains 191
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 417 | ERROR | Line exceeds maximum limit of 180 characters; contains 223
+ 426 | ERROR | Line exceeds maximum limit of 180 characters; contains 223
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 472 | ERROR | Line exceeds maximum limit of 180 characters; contains 254
+ 481 | ERROR | Line exceeds maximum limit of 180 characters; contains 254
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 523 | ERROR | Line exceeds maximum limit of 180 characters; contains 192
+ 532 | ERROR | Line exceeds maximum limit of 180 characters; contains 192
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 592 | ERROR | Line exceeds maximum limit of 180 characters; contains 195
+ 601 | ERROR | Line exceeds maximum limit of 180 characters; contains 195
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -1191,10 +1188,10 @@ FILE: ...ions/SemanticMediaWiki/includes/specials/SMW_SpecialSMWAdmin.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 27 | ERROR   | Each class must be in a namespace of at least one level
+ 26 | ERROR   | Each class must be in a namespace of at least one level
     |         | (a top-level vendor name)
     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 58 | WARNING | The method parameter $par is never used
+ 57 | WARNING | The method parameter $par is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -1252,91 +1249,31 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...anticMediaWiki/includes/storage/SQLStore/SMW_DataItemHandler.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 17 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...ticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_Concept.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 19 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
 FILE: ...ticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3_Readers.php
 ----------------------------------------------------------------------
 FOUND 9 ERRORS AFFECTING 9 LINES
 ----------------------------------------------------------------------
-  17 | ERROR | Each class must be in a namespace of at least one level (a
+  20 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  46 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+  49 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 239 | ERROR | Empty CATCH statement detected
+ 247 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 289 | ERROR | Function's cyclomatic complexity (17) exceeds allowed
+ 297 | ERROR | Function's cyclomatic complexity (18) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 426 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+ 443 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 490 | ERROR | Empty CATCH statement detected
+ 507 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 521 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 538 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 666 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 683 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 702 | ERROR | Empty CATCH statement detected
+ 719 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
-----------------------------------------------------------------------
-
-
-FILE: ...emanticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_URI.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...manticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_Time.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...icMediaWiki/includes/storage/SQLStore/SMW_DIHandler_WikiPage.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 21 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...manticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_Blob.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
@@ -1344,78 +1281,33 @@ FILE: ...MediaWiki/includes/storage/SQLStore/SMW_Sql3StubSemanticData.php
 ----------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
-  18 | ERROR | Each class must be in a namespace of at least one level (a
+  19 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 138 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 139 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 159 | ERROR | Empty CATCH statement detected
+ 160 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
- 298 | ERROR | Empty CATCH statement detected
+ 299 | ERROR | Empty CATCH statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
-----------------------------------------------------------------------
-
-
-FILE: ...iaWiki/includes/storage/SQLStore/SMW_SQLStore3_SetupHandlers.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
- 23 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 70 | WARNING | The method parameter $db is never used
-    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
-FILE: ...icMediaWiki/includes/storage/SQLStore/SMW_DIHandler_GeoCoord.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...manticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_Bool.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...nticMediaWiki/includes/storage/SQLStore/SMW_DIHandler_Number.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-----------------------------------------------------------------------
- 14 | ERROR | Each class must be in a namespace of at least one level (a
-    |       | top-level vendor name)
-    |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
 ----------------------------------------------------------------------
 
 
 FILE: ...ns/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php
 ----------------------------------------------------------------------
-FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
+FOUND 3 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
-  46 | ERROR   | Each class must be in a namespace of at least one level
+  47 | ERROR   | Each class must be in a namespace of at least one level
      |         | (a top-level vendor name)
      |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 194 | ERROR   | Function's cyclomatic complexity (14) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 466 | WARNING | The method parameter $id is never used
+ 387 | WARNING | The method parameter $id is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 621 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+ 542 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
      |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 621 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
+ 542 | ERROR   | Function's cyclomatic complexity (11) exceeds allowed
      |         | maximum of 10
      |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 716 | WARNING | Possible useless method overriding detected
+ 637 | WARNING | Possible useless method overriding detected
      |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 
@@ -1424,12 +1316,12 @@ FILE: ...ticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3_Writers.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  25 | ERROR | Each class must be in a namespace of at least one level (a
+  27 | ERROR | Each class must be in a namespace of at least one level (a
      |       | top-level vendor name)
      |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 750 | ERROR | Function's nesting level (7) exceeds allowed maximum of
+ 720 | ERROR | Function's nesting level (7) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 750 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
+ 720 | ERROR | Function's cyclomatic complexity (20) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -1442,435 +1334,21 @@ FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
    53 | ERROR   | Each class must be in a namespace of at least one level
       |         | (a top-level vendor name)
       |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-  345 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+  346 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
       |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
-  345 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
+  346 | ERROR   | Function's cyclomatic complexity (12) exceeds allowed
       |         | maximum of 10
       |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-  816 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
+  817 | ERROR   | Function's nesting level (4) exceeds allowed maximum of
       |         | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 1088 | WARNING | The method parameter $oldtitle is never used
+ 1089 | WARNING | The method parameter $oldtitle is never used
       |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 1088 | WARNING | The method parameter $newtitle is never used
+ 1089 | WARNING | The method parameter $newtitle is never used
       |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageAr.php
-----------------------------------------------------------------------
-FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
-----------------------------------------------------------------------
-   1 | WARNING | A file should declare new symbols (classes, functions,
-     |         | constants, etc.) and cause no other side effects, or it
-     |         | should execute logic with side effects, but should not do
-     |         | both. The first symbol is defined on line 25 and the first
-     |         | side effect is on line 11.
-     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
-  25 | ERROR   | Each class must be in a namespace of at least one level
-     |         | (a top-level vendor name)
-     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 108 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
- 110 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 210 characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ....25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageArz.php
-----------------------------------------------------------------------
-FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
-----------------------------------------------------------------------
-   1 | WARNING | A file should declare new symbols (classes, functions,
-     |         | constants, etc.) and cause no other side effects, or it
-     |         | should execute logic with side effects, but should not do
-     |         | both. The first symbol is defined on line 25 and the first
-     |         | side effect is on line 12.
-     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
-  25 | ERROR   | Each class must be in a namespace of at least one level
-     |         | (a top-level vendor name)
-     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 108 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 205 characters (Generic.Files.LineLength.MaxExceeded)
- 110 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 210 characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageCa.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 25 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 25 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...extensions/SemanticMediaWiki/languages/SMW_LanguageDe_formal.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 26 | ERROR   | Class name "SMWLanguageDe_formal" is not in camel caps
-    |         | format (Squiz.Classes.ValidClassName.NotCamelCaps)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageDe.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 34 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 34 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageEn.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageEs.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageFi.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageFr.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageHe.php
-----------------------------------------------------------------------
-FOUND 3 ERRORS AND 1 WARNING AFFECTING 4 LINES
-----------------------------------------------------------------------
-   1 | WARNING | A file should declare new symbols (classes, functions,
-     |         | constants, etc.) and cause no other side effects, or it
-     |         | should execute logic with side effects, but should not do
-     |         | both. The first symbol is defined on line 26 and the first
-     |         | side effect is on line 12.
-     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
-  26 | ERROR   | Each class must be in a namespace of at least one level
-     |         | (a top-level vendor name)
-     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 111 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 199 characters (Generic.Files.LineLength.MaxExceeded)
- 113 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 204 characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageHu.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 34 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 34 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageId.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 28 and the first
-    |         | side effect is on line 14.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 28 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageIt.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageJa.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 22 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 22 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageNb.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageNl.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 28 and the first
-    |         | side effect is on line 14.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 28 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...i-1.25.6/extensions/SemanticMediaWiki/languages/SMW_Language.php
-----------------------------------------------------------------------
-FOUND 15 ERRORS AFFECTING 15 LINES
-----------------------------------------------------------------------
-  20 | ERROR | Each class must be in a namespace of at least one level (a
-     |       | top-level vendor name)
-     |       | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 148 | ERROR | Visibility must be declared on method "getNamespaces"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 161 | ERROR | Visibility must be declared on method
-     |       | "getNamespaceAliases" (Squiz.Scope.MethodScope.Missing)
- 186 | ERROR | Visibility must be declared on method
-     |       | "getDatatypeLabels" (Squiz.Scope.MethodScope.Missing)
- 190 | ERROR | Visibility must be declared on method
-     |       | "getCanonicalDatatypeLabels"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 198 | ERROR | Visibility must be declared on method
-     |       | "getDatatypeAliases" (Squiz.Scope.MethodScope.Missing)
- 207 | ERROR | Visibility must be declared on method
-     |       | "getPropertyLabels" (Squiz.Scope.MethodScope.Missing)
- 211 | ERROR | Visibility must be declared on method
-     |       | "getCanonicalPropertyAliases"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 215 | ERROR | Visibility must be declared on method
-     |       | "getCanonicalPropertyLabels"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 222 | ERROR | Visibility must be declared on method
-     |       | "getPropertyAliases" (Squiz.Scope.MethodScope.Missing)
- 231 | ERROR | Visibility must be declared on method "getPropertyId"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 247 | ERROR | Visibility must be declared on method "getDateFormats"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 251 | ERROR | Visibility must be declared on method
-     |       | "getPreferredDateFormats"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 260 | ERROR | Visibility must be declared on method "findMonth"
-     |       | (Squiz.Scope.MethodScope.Missing)
- 275 | ERROR | Visibility must be declared on method "getMonthLabel"
-     |       | (Squiz.Scope.MethodScope.Missing)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguagePl.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 44 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 44 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguagePt.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 25 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 25 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageRu.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 3 LINES
-----------------------------------------------------------------------
-   1 | WARNING | A file should declare new symbols (classes, functions,
-     |         | constants, etc.) and cause no other side effects, or it
-     |         | should execute logic with side effects, but should not do
-     |         | both. The first symbol is defined on line 26 and the first
-     |         | side effect is on line 12.
-     |         | (PSR1.Files.SideEffects.FoundWithSymbols)
-  26 | ERROR   | Each class must be in a namespace of at least one level
-     |         | (a top-level vendor name)
-     |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 113 | ERROR   | Line exceeds maximum limit of 180 characters; contains
-     |         | 219 characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...1.25.6/extensions/SemanticMediaWiki/languages/SMW_LanguageSk.php
-----------------------------------------------------------------------
-FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 26 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 26 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
-----------------------------------------------------------------------
-
-
-FILE: ...5.6/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_cn.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 29 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 29 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 29 | ERROR   | Class name "SMWLanguageZh_cn" is not in camel caps
-    |         | format (Squiz.Classes.ValidClassName.NotCamelCaps)
-----------------------------------------------------------------------
-
-
-FILE: ...5.6/extensions/SemanticMediaWiki/languages/SMW_LanguageZh_tw.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AND 1 WARNING AFFECTING 2 LINES
-----------------------------------------------------------------------
-  1 | WARNING | A file should declare new symbols (classes, functions,
-    |         | constants, etc.) and cause no other side effects, or it
-    |         | should execute logic with side effects, but should not do
-    |         | both. The first symbol is defined on line 28 and the first
-    |         | side effect is on line 12.
-    |         | (PSR1.Files.SideEffects.FoundWithSymbols)
- 28 | ERROR   | Each class must be in a namespace of at least one level
-    |         | (a top-level vendor name)
-    |         | (PSR1.Classes.ClassDeclaration.MissingNamespace)
- 28 | ERROR   | Class name "SMWLanguageZh_tw" is not in camel caps
-    |         | format (Squiz.Classes.ValidClassName.NotCamelCaps)
-----------------------------------------------------------------------
-
-
-FILE: ...wiki-1.25.6/extensions/SemanticMediaWiki/maintenance/dumpRDF.php
+FILE: ...l/mediawiki/extensions/SemanticMediaWiki/maintenance/dumpRDF.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1886,7 +1364,7 @@ FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...mediawiki-1.25.6/extensions/SemanticMediaWiki/maintenance/README
+FILE: ...w/html/mediawiki/extensions/SemanticMediaWiki/maintenance/README
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1909,7 +1387,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...-1.25.6/extensions/SemanticMediaWiki/maintenance/rebuildData.php
+FILE: ...diawiki/extensions/SemanticMediaWiki/maintenance/rebuildData.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1945,7 +1423,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.25.6/extensions/SemanticMediaWiki/maintenance/setupStore.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/maintenance/setupStore.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -1957,7 +1435,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...6/extensions/SemanticMediaWiki/src/DataValues/ReferenceValue.php
+FILE: ...i/extensions/SemanticMediaWiki/src/DataValues/ReferenceValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
@@ -1968,7 +1446,7 @@ FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...25.6/extensions/SemanticMediaWiki/src/DataValues/ImportValue.php
+FILE: ...wiki/extensions/SemanticMediaWiki/src/DataValues/ImportValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
@@ -1983,7 +1461,7 @@ FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 4 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...5.6/extensions/SemanticMediaWiki/src/DataValues/BooleanValue.php
+FILE: ...iki/extensions/SemanticMediaWiki/src/DataValues/BooleanValue.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 5 WARNINGS AFFECTING 6 LINES
 ----------------------------------------------------------------------
@@ -2049,6 +1527,15 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
+FILE: ...iaWiki/src/DataValues/ValueFormatters/PropertyValueFormatter.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 164 | WARNING | The method parameter $linker is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
 FILE: .../extensions/SemanticMediaWiki/src/DataValues/AllowsListValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -2062,9 +1549,9 @@ FILE: ...tensions/SemanticMediaWiki/src/DataValues/AllowsPatternValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 27 | WARNING | The method parameter $typeid is never used
+ 28 | WARNING | The method parameter $typeid is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 63 | WARNING | The method parameter $linker is never used
+ 64 | WARNING | The method parameter $linker is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2084,9 +1571,9 @@ FILE: ...nsions/SemanticMediaWiki/src/DataValues/MonolingualTextValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
-  52 | WARNING | The method parameter $typeid is never used
+  53 | WARNING | The method parameter $typeid is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 231 | WARNING | Possible useless method overriding detected
+ 244 | WARNING | Possible useless method overriding detected
      |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 
@@ -2122,7 +1609,7 @@ FILE: ...s/SemanticMediaWiki/src/DataValues/ExternalFormatterUriValue.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 18 | WARNING | The method parameter $typeid is never used
+ 25 | WARNING | The method parameter $typeid is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2168,9 +1655,11 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 
 FILE: ...ensions/SemanticMediaWiki/src/DeferredRequestDispatchManager.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 232 | ERROR | Line exceeds maximum limit of 180 characters; contains 219
+ 230 | ERROR | Line exceeds maximum limit of 180 characters; contains 184
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+ 237 | ERROR | Line exceeds maximum limit of 180 characters; contains 288
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2204,16 +1693,18 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.25.6/extensions/SemanticMediaWiki/src/ExtraneousLanguage.php
+FILE: .../SemanticMediaWiki/src/ExtraneousLanguage/ExtraneousLanguage.php
 ----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 249 | WARNING | Silencing errors is discouraged
+ 377 | WARNING | The method parameter $propertyLabel is never used
+     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 462 | WARNING | Silencing errors is discouraged
      |         | (Generic.PHP.NoSilencedErrors.Discouraged)
 ----------------------------------------------------------------------
 
 
-FILE: ...wiki-1.25.6/extensions/SemanticMediaWiki/src/GlobalFunctions.php
+FILE: ...l/mediawiki/extensions/SemanticMediaWiki/src/GlobalFunctions.php
 ----------------------------------------------------------------------
 FOUND 3 ERRORS AND 12 WARNINGS AFFECTING 12 LINES
 ----------------------------------------------------------------------
@@ -2254,7 +1745,7 @@ FOUND 3 ERRORS AND 12 WARNINGS AFFECTING 12 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...-1.25.6/extensions/SemanticMediaWiki/src/IntlNumberFormatter.php
+FILE: ...diawiki/extensions/SemanticMediaWiki/src/IntlNumberFormatter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2263,20 +1754,38 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: .../mediawiki-1.25.6/extensions/SemanticMediaWiki/src/Localizer.php
+FILE: ...mediawiki/extensions/SemanticMediaWiki/src/IntlTimeFormatter.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 283 | ERROR | Line exceeds maximum limit of 180 characters; contains 205
+ 211 | ERROR | Empty IF statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
+----------------------------------------------------------------------
+
+
+FILE: ...ediawiki/extensions/SemanticMediaWiki/src/Libs/Time/Timezone.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 254 | ERROR | Empty CATCH statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedCATCH)
+----------------------------------------------------------------------
+
+
+FILE: ...ww/html/mediawiki/extensions/SemanticMediaWiki/src/Localizer.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 314 | ERROR | Line exceeds maximum limit of 180 characters; contains 205
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
 
-FILE: ....6/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
+FILE: ...ki/extensions/SemanticMediaWiki/src/MediaWiki/Jobs/UpdateJob.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 45 | ERROR | Visibility must be declared on method "__construct"
+ 46 | ERROR | Visibility must be declared on method "__construct"
     |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -2290,24 +1799,24 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...i-1.25.6/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
+FILE: ...ediawiki/extensions/SemanticMediaWiki/src/MediaWiki/Database.php
 ----------------------------------------------------------------------
 FOUND 7 ERRORS AFFECTING 7 LINES
 ----------------------------------------------------------------------
- 294 | ERROR | Visibility must be declared on method "affectedRows"
+ 309 | ERROR | Visibility must be declared on method "affectedRows"
      |       | (Squiz.Scope.MethodScope.Missing)
- 331 | ERROR | Visibility must be declared on method "insertId"
+ 346 | ERROR | Visibility must be declared on method "insertId"
      |       | (Squiz.Scope.MethodScope.Missing)
- 340 | ERROR | Visibility must be declared on method
+ 355 | ERROR | Visibility must be declared on method
      |       | "resetTransactionProfiler"
      |       | (Squiz.Scope.MethodScope.Missing)
- 352 | ERROR | Visibility must be declared on method "clearFlag"
+ 364 | ERROR | Visibility must be declared on method "clearFlag"
      |       | (Squiz.Scope.MethodScope.Missing)
- 361 | ERROR | Visibility must be declared on method "getFlag"
+ 373 | ERROR | Visibility must be declared on method "getFlag"
      |       | (Squiz.Scope.MethodScope.Missing)
- 370 | ERROR | Visibility must be declared on method "setFlag"
+ 382 | ERROR | Visibility must be declared on method "setFlag"
      |       | (Squiz.Scope.MethodScope.Missing)
- 423 | ERROR | Visibility must be declared on method "update"
+ 422 | ERROR | Visibility must be declared on method "update"
      |       | (Squiz.Scope.MethodScope.Missing)
 ----------------------------------------------------------------------
 
@@ -2316,10 +1825,10 @@ FILE: ...xtensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 500 | WARNING | The method parameter $applicationFactory is never
+ 489 | WARNING | The method parameter $applicationFactory is never
      |         | used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 507 | ERROR   | Line exceeds maximum limit of 180 characters; contains
+ 496 | ERROR   | Line exceeds maximum limit of 180 characters; contains
      |         | 210 characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2350,10 +1859,10 @@ FILE: ...icMediaWiki/src/MediaWiki/Specials/Browse/HtmlContentBuilder.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 253 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
+ 254 | ERROR | Function's cyclomatic complexity (12) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 553 | ERROR | Line exceeds maximum limit of 180 characters; contains 237
+ 564 | ERROR | Line exceeds maximum limit of 180 characters; contains 237
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2362,7 +1871,7 @@ FILE: ...Wiki/src/MediaWiki/Specials/SpecialDeferredRequestDispatcher.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 74 | WARNING | The method parameter $query is never used
+ 83 | WARNING | The method parameter $query is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2394,14 +1903,15 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...l/mediawiki-1.25.6/extensions/SemanticMediaWiki/src/Message.php~
+FILE: ...ki/extensions/SemanticMediaWiki/src/MediaWiki/DatabaseHelper.php
 ----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
- 20 | WARNING | Duplicate class name "SMW\Message" found; first defined
-    |         | in
-    |         | /var/www/html/mediawiki-1.25.6/extensions/SemanticMediaWiki/src/Message.php
-    |         | on line 20 (Generic.Classes.DuplicateClassName.Found)
+  21 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 104 | ERROR | Usage of "$this" in static methods will cause runtime
+     |       | errors (Squiz.Scope.StaticThisUsage.Found)
 ----------------------------------------------------------------------
 
 
@@ -2414,19 +1924,16 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ....6/extensions/SemanticMediaWiki/src/ParserParameterProcessor.php
+FILE: ...cMediaWiki/src/ParserFunctions/RecurringEventsParserFunction.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 170 | ERROR | Function's nesting level (4) exceeds allowed maximum of
-     |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
- 170 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
-     |       | maximum of 10
-     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+ 49 | WARNING | Possible useless method overriding detected
+    |         | (Generic.CodeAnalysis.UselessOverridingMethod.Found)
 ----------------------------------------------------------------------
 
 
-FILE: ...6/extensions/SemanticMediaWiki/src/ProcessingErrorMsgHandler.php
+FILE: ...i/extensions/SemanticMediaWiki/src/ProcessingErrorMsgHandler.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2435,11 +1942,11 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...iki-1.25.6/extensions/SemanticMediaWiki/src/PropertyRegistry.php
+FILE: .../mediawiki/extensions/SemanticMediaWiki/src/PropertyRegistry.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 99 | ERROR | Line exceeds maximum limit of 180 characters; contains 200
+ 94 | ERROR | Line exceeds maximum limit of 180 characters; contains 200
     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2555,7 +2062,7 @@ FILE: ...ns/SemanticMediaWiki/src/SPARQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 245 | ERROR | Empty ELSEIF statement detected
+ 244 | ERROR | Empty ELSEIF statement detected
      |       | (Generic.CodeAnalysis.EmptyStatement.DetectedELSEIF)
 ----------------------------------------------------------------------
 
@@ -2573,7 +2080,7 @@ FILE: ...iaWiki/src/SQLStore/QueryEngine/Fulltext/TextByChangeUpdater.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 83 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
+ 90 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
     |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2619,91 +2126,72 @@ FOUND 1 ERROR AFFECTING 1 LINE
 
 FILE: ...sions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php
 ----------------------------------------------------------------------
-FOUND 8 ERRORS AFFECTING 8 LINES
+FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
   91 | ERROR | Line exceeds maximum limit of 180 characters; contains 189
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 181 | ERROR | Line exceeds maximum limit of 180 characters; contains 285
+ 187 | ERROR | Line exceeds maximum limit of 180 characters; contains 285
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 288 | ERROR | Line exceeds maximum limit of 180 characters; contains 220
+ 401 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
      |       | characters (Generic.Files.LineLength.MaxExceeded)
- 299 | ERROR | Line exceeds maximum limit of 180 characters; contains 194
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 310 | ERROR | Line exceeds maximum limit of 180 characters; contains 192
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 324 | ERROR | Line exceeds maximum limit of 180 characters; contains 186
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 417 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 533 | ERROR | Function's nesting level (4) exceeds allowed maximum of
+ 517 | ERROR | Function's nesting level (4) exceeds allowed maximum of
      |       | 3 (Generic.Metrics.NestingLevel.MaxExceeded)
 ----------------------------------------------------------------------
 
 
 FILE: ...manticMediaWiki/src/SQLStore/TableBuilder/SQLiteTableBuilder.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AND 11 WARNINGS AFFECTING 8 LINES
+FOUND 0 ERRORS AND 11 WARNINGS AFFECTING 7 LINES
 ----------------------------------------------------------------------
-  18 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
- 152 | WARNING | The method parameter $tableOptions is never used
+ 147 | WARNING | The method parameter $tableOptions is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 163 | WARNING | The method parameter $position is never used
+ 160 | WARNING | The method parameter $position is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 174 | WARNING | The method parameter $tableName is never used
+ 171 | WARNING | The method parameter $tableName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 174 | WARNING | The method parameter $fieldName is never used
+ 171 | WARNING | The method parameter $fieldName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 174 | WARNING | The method parameter $position is never used
+ 171 | WARNING | The method parameter $position is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 174 | WARNING | The method parameter $oldFieldType is never used
+ 171 | WARNING | The method parameter $oldFieldType is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 174 | WARNING | The method parameter $newFieldType is never used
+ 171 | WARNING | The method parameter $newFieldType is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 179 | WARNING | The method parameter $tableName is never used
+ 176 | WARNING | The method parameter $tableName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 215 | WARNING | The method parameter $indicies is never used
+ 212 | WARNING | The method parameter $indicies is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 249 | WARNING | The method parameter $tableName is never used
+ 246 | WARNING | The method parameter $tableName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 255 | WARNING | The method parameter $indexOptions is never used
+ 252 | WARNING | The method parameter $indexOptions is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
 FILE: ...nticMediaWiki/src/SQLStore/TableBuilder/PostgresTableBuilder.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AND 4 WARNINGS AFFECTING 4 LINES
+FOUND 0 ERRORS AND 4 WARNINGS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  18 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
  161 | WARNING | The method parameter $position is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
  161 | WARNING | The method parameter $tableOptions is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 264 | WARNING | The method parameter $indexOptions is never used
+ 265 | WARNING | The method parameter $indexOptions is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 311 | WARNING | The method parameter $tableName is never used
+ 312 | WARNING | The method parameter $tableName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
 FILE: ...emanticMediaWiki/src/SQLStore/TableBuilder/MySQLTableBuilder.php
 ----------------------------------------------------------------------
-FOUND 2 ERRORS AND 3 WARNINGS AFFECTING 5 LINES
+FOUND 1 ERROR AND 2 WARNINGS AFFECTING 3 LINES
 ----------------------------------------------------------------------
-  18 | ERROR   | Function's cyclomatic complexity (13) exceeds allowed
-     |         | maximum of 10
-     |         | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
-  76 | WARNING | The method parameter $tableOptions is never used
+ 156 | WARNING | The method parameter $tableOptions is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 165 | WARNING | The method parameter $tableOptions is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
- 194 | ERROR   | Empty IF statement detected
+ 187 | ERROR   | Empty IF statement detected
      |         | (Generic.CodeAnalysis.EmptyStatement.DetectedIF)
- 291 | WARNING | The method parameter $indexName is never used
+ 284 | WARNING | The method parameter $indexName is never used
      |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
@@ -2720,6 +2208,16 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
+FILE: ...MediaWiki/src/SQLStore/EntityStore/DataItemHandlerDispatcher.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 61 | ERROR | Function's cyclomatic complexity (13) exceeds allowed
+    |       | maximum of 10
+    |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...ticMediaWiki/src/SQLStore/CompositePropertyTableDiffIterator.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -2729,31 +2227,20 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...iki/src/SQLStore/QueryDependency/DependencyLinksTableUpdater.php
-----------------------------------------------------------------------
-FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
-----------------------------------------------------------------------
- 189 | WARNING | The method parameter $subobjectName is never used
-     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
-----------------------------------------------------------------------
-
-
 FILE: ...aWiki/src/SQLStore/QueryDependency/QueryDependencyLinksStore.php
-----------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
-----------------------------------------------------------------------
- 246 | ERROR | Line exceeds maximum limit of 180 characters; contains 187
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 275 | ERROR | Line exceeds maximum limit of 180 characters; contains 234
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
-FILE: ...ons/SemanticMediaWiki/src/SQLStore/ByIdDataRebuildDispatcher.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 231 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
+ 269 | ERROR | Line exceeds maximum limit of 180 characters; contains 197
+     |       | characters (Generic.Files.LineLength.MaxExceeded)
+----------------------------------------------------------------------
+
+
+FILE: ...sions/SemanticMediaWiki/src/SQLStore/EntityRebuildDispatcher.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 238 | ERROR | Function's cyclomatic complexity (14) exceeds allowed
      |       | maximum of 10
      |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
 ----------------------------------------------------------------------
@@ -2779,6 +2266,16 @@ FOUND 2 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
+FILE: ...diaWiki/tests/phpunit/Utils/Validators/SemanticDataValidator.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 197 | ERROR | Function's cyclomatic complexity (11) exceeds allowed
+     |       | maximum of 10
+     |       | (Generic.Metrics.CyclomaticComplexity.MaxExceeded)
+----------------------------------------------------------------------
+
+
 FILE: ...extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
@@ -2798,8 +2295,8 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
  1 | WARNING | A file should declare new symbols (classes, functions,
    |         | constants, etc.) and cause no other side effects, or it should
    |         | execute logic with side effects, but should not do both. The
-   |         | first symbol is defined on line 21 and the first side effect
-   |         | is on line 105. (PSR1.Files.SideEffects.FoundWithSymbols)
+   |         | first symbol is defined on line 22 and the first side effect
+   |         | is on line 108. (PSR1.Files.SideEffects.FoundWithSymbols)
 ----------------------------------------------------------------------
 
 
@@ -2834,7 +2331,7 @@ FOUND 3 ERRORS AFFECTING 3 LINES
 ----------------------------------------------------------------------
 
 
-FILE: ...6/extensions/SemanticMediaWiki/tests/phpunit/TestEnvironment.php
+FILE: ...i/extensions/SemanticMediaWiki/tests/phpunit/TestEnvironment.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2852,6 +2349,17 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | execute logic with side effects, but should not do both. The
    |         | first symbol is defined on line 16 and the first side effect
    |         | is on line 94. (PSR1.Files.SideEffects.FoundWithSymbols)
+----------------------------------------------------------------------
+
+
+FILE: .../SemanticMediaWiki/tests/phpunit/Unit/Libs/Time/TimezoneTest.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 54 | WARNING | The method parameter $isValid is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 54 | WARNING | The method parameter $isMilitary is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
 ----------------------------------------------------------------------
 
 
@@ -2875,26 +2383,11 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: .../Unit/DataValues/ValueFormatters/ReferenceValueFormatterTest.php
-----------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 4 LINES
-----------------------------------------------------------------------
- 125 | ERROR | Line exceeds maximum limit of 180 characters; contains 238
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 132 | ERROR | Line exceeds maximum limit of 180 characters; contains 238
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 139 | ERROR | Line exceeds maximum limit of 180 characters; contains 238
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
- 146 | ERROR | Line exceeds maximum limit of 180 characters; contains 238
-     |       | characters (Generic.Files.LineLength.MaxExceeded)
-----------------------------------------------------------------------
-
-
 FILE: ...nit/Unit/DataValues/ValueFormatters/NumberValueFormatterTest.php
 ----------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------
- 189 | ERROR | Line exceeds maximum limit of 180 characters; contains 236
+ 189 | ERROR | Line exceeds maximum limit of 180 characters; contains 304
      |       | characters (Generic.Files.LineLength.MaxExceeded)
 ----------------------------------------------------------------------
 
@@ -2914,12 +2407,42 @@ FOUND 4 ERRORS AFFECTING 2 LINES
 ----------------------------------------------------------------------
 
 
+FILE: ...sts/phpunit/Unit/ParserFunctions/SubobjectParserFunctionTest.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 60 | WARNING | The method parameter $expected is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...it/Unit/SQLStore/EntityStore/EntitySubobjectListIteratorTest.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 148 | ERROR | Empty FOREACH statement detected
+     |       | (Generic.CodeAnalysis.EmptyStatement.DetectedFOREACH)
+----------------------------------------------------------------------
+
+
 FILE: ...ediaWiki/tests/phpunit/Unit/Exporter/Element/ExpResourceTest.php
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
  64 | WARNING | The method parameter $isBlankNode is never used
     |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...s/phpunit/Integration/ByJsonScript/version2TestCaseConverter.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | WARNING | A file should declare new symbols (classes, functions,
+   |         | constants, etc.) and cause no other side effects, or it should
+   |         | execute logic with side effects, but should not do both. The
+   |         | first symbol is defined on line 14 and the first side effect
+   |         | is on line 179. (PSR1.Files.SideEffects.FoundWithSymbols)
 ----------------------------------------------------------------------
 
 
@@ -2935,7 +2458,18 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...diaWiki/tests/phpunit/Integration/QuerySourceIntegrationTest.php
+FILE: ...s/phpunit/Integration/ExtraneousLanguage/LanguageContentTest.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 26 | WARNING | The method parameter $aliasMatch is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+ 43 | WARNING | The method parameter $canonicalMatch is never used
+    |         | (Generic.CodeAnalysis.UnusedFunctionParameter.Found)
+----------------------------------------------------------------------
+
+
+FILE: ...i/tests/phpunit/Integration/Query/QuerySourceIntegrationTest.php
 ----------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2955,7 +2489,7 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
 
 
-FILE: ...ml/mediawiki-1.25.6/extensions/SemanticMediaWiki/tests/README.md
+FILE: .../www/html/mediawiki/extensions/SemanticMediaWiki/tests/README.md
 ----------------------------------------------------------------------
 FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
 ----------------------------------------------------------------------
@@ -2965,4 +2499,4 @@ FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
    |         | (Internal.NoCodeFound)
 ----------------------------------------------------------------------
 
-Time: 17.36 secs; Memory: 84Mb
+Time: 17.65 secs; Memory: 100Mb
