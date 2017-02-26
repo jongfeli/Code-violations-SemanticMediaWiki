@@ -26,6 +26,8 @@ php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=ph
 
 php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Generic.Formatting.DisallowMultipleStatements
 
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Generic.PHP.LowerCaseKeyword
+
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
 SOURCE                                                           COUNT
