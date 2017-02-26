@@ -4,27 +4,27 @@ php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=ph
 
 
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Classes.SelfMemberReference
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.Classes.SelfMemberReference
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SemicolonSpacing
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.WhiteSpace.SemicolonSpacing
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Functions.FunctionCallArgumentSpacing
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Generic.Functions.FunctionCallArgumentSpacing
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.ScopeClosingBrace
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.WhiteSpace.ScopeClosingBrace
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.LanguageConstructSpacing
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.WhiteSpace.LanguageConstructSpacing
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Arrays.ArrayBracketSpacing
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.Arrays.ArrayBracketSpacing
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.WhiteSpace.DisallowSpaceIndent
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Generic.WhiteSpace.DisallowSpaceIndent
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.Classes.SelfMemberReference
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.Classes.SelfMemberReference
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Formatting.DisallowMultipleStatements
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -sp --sniffs=Generic.Formatting.DisallowMultipleStatements
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
