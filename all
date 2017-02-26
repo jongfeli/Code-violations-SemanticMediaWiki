@@ -24,8 +24,7 @@ php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=ph
 
 php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Squiz.WhiteSpace.SuperfluousWhitespace
-
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -sp --sniffs=Generic.Formatting.DisallowMultipleStatements
 
 PHP CODE SNIFFER VIOLATION SOURCE SUMMARY
 ----------------------------------------------------------------------
