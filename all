@@ -1,6 +1,6 @@
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 
-php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php -s --report=source
+php phpcs.phar docs/* includes/* maintenance/* res/* src/* tests/* --standard=phpcs.xml --extensions=php --ignore=md,README -s --report=source
 
 
 
